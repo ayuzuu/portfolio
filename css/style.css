@@ -157,7 +157,7 @@ index css ここから
   margin-bottom: 130px;
 }
 .menu li {
-  width: 100px;
+  width: 130px;
   font-size: 24px;
   font-family: 'Noto Sans', sans-serif;
   color: #555;
@@ -179,6 +179,9 @@ index css ここから
   color: #ffb7c5;
   -webkit-transition: all .3s;
   transition: all .3s;
+}
+.fa-user-circle:before, .fa-desktop:before, .fa-palette:before {
+  margin-right: 6px;
 }
 /* ======================================
 index css ここまで
