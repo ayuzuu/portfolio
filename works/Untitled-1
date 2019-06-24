@@ -1,0 +1,9 @@
+ // リストを非表示
+    $('#fadein_area ul li').hide();
+$('#fadein_area ul li').on('inview', function(event, isInView){
+    if (isInView) {
+        $(this).delay(500 * i).fadeIn(1000);
+    }else{
+    }
+  }); 
+   

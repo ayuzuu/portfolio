@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name=”robots” content=”noindex,nofollow”>
+	<title>Portforio</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/work.css">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+	<script type="text/javascript" src="js/portfolio.js"></script>
+	<script type="text/javascript" src="js/load-parts.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			// MixItUp1の設定
+			var config = {
+				selectors: {
+					target: '.portfolio',
+					filter: '.filter'
+				},
+				load: {
+					filter: $.cookie("filter")
+				}
+			};
+
+			var filterList = {
+				init: function () {
+					// MixItUp plugin
+					// http://mixitup.io
+					$('#portfoliolist').mixItUp(config);
+				}
+			};
+
+			// Run the show!
+			filterList.init();
+
+			// フィルター選んだ時にクッキーに保存する
+			$('#filter-all').on("click", function () {
+				$.cookie('filter', 'all');
+			});
+			$('#filter-web').on("click", function () {
+				$.cookie('filter', '.web');
+			});
+			$('#filter-graphic').on("click", function () {
+				$.cookie('filter', '.graphic');
+			});
+
+		});	
+	</script>
+</head>
+
+<body>
+	<div data-load-parts="/header.html"></div>
+
+	<section id="work" class="work-box animated fadeIn">
+		<h1>
+			<img src="images/common/img-works.png" alt="work">
+		</h1>
+		<div class="container">
+			<ul id="filters" class="clearfix">
+				<li>
+					<span id="filter-all" class="filter active" data-filter="all">All</span>
+				</li>
+				<li>
+					<span id="filter-web" class="filter" data-filter=".web">web</span>
+				</li>
+				<li>
+					<span id="filter-graphic" class="filter" data-filter=".graphic">graphic</span>
+				</li>
+			</ul>
+
+			<ul id="portfoliolist">
+				<!-- webここから -->
+				<li>
+					<a href="works/works-web-01.html">
+						<div class="portfolio web" data-cat="web">
+							<div class="portfolio-wrapper">
+								<img src="images/works/img-web-guide.png" alt="" />
+								<div class="label">
+									<div class="label-text">
+										<p class="text-title">タイトル</p>
+										<span class="text-category">◯◯◯◯◯◯◯◯◯◯◯</span>
+									</div>
+									<div class="label-bg"></div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="works/works-web-02.html">
+						<div class="portfolio web" data-cat="web">
+							<div class="portfolio-wrapper">
+								<img src="images/works/img-web-smartly.png" alt="" />
+								<div class="label">
+									<div class="label-text">
+										<p class="text-title">タイトル</p>
+										<span class="text-category">◯◯◯◯◯◯◯◯◯◯◯</span>
+									</div>
+									<div class="label-bg"></div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="works/works-web-03.html">
+						<div class="portfolio web" data-cat="web">
+							<div class="portfolio-wrapper">
+								<img src="images/works/img-web-smartly.png" alt="" />
+								<div class="label">
+									<div class="label-text">
+										<p class="text-title">タイトル</p>
+										<span class="text-category">◯◯◯◯◯◯◯◯◯◯◯</span>
+									</div>
+									<div class="label-bg"></div>
+								</div>
+							</div>
+						</div>
+						<a>
+				</li>
+				<li>
+					<a href="work-web.html">
+						<div class="portfolio web" data-cat="web">
+							<div class="portfolio-wrapper">
+								<img src="images/portfolios/sample.png" alt="" />
+								<div class="label">
+									<div class="label-text">
+										<p class="text-title">タイトル</p>
+										<span class="text-category">◯◯◯◯◯◯◯◯◯◯◯</span>
+									</div>
+									<div class="label-bg"></div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="work-web.html">
+						<div class="portfolio web" data-cat="web">
+							<div class="portfolio-wrapper">
+								<img src="images/portfolios/sample.png" alt="" />
+								<div class="label">
+									<div class="label-text">
+										<p class="text-title">タイトル</p>
+										<span class="text-category">◯◯◯◯◯◯◯◯◯◯◯</span>
+									</div>
+									<div class="label-bg"></div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="work-web.html">
+						<div class="portfolio web" data-cat="web">
+							<div class="portfolio-wrapper">
+								<img src="images/portfolios/sample.png" alt="" />
+								<div class="label">
+									<div class="label-text">
+										<p class="text-title">タイトル</p>
+										<span class="text-category">◯◯◯◯◯◯◯◯◯◯◯</span>
+									</div>
+									<div class="label-bg"></div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<!-- webここまで -->
+
+				<!-- graphicここから -->
+				<li>
+					<a href="works/works-graphic-01.html">
+						<div class="portfolio graphic" data-cat="graphic">
+							<div class="portfolio-wrapper">
+								<img src="images/works/img-graphic-01.jpg" alt="" />
+								<div class="label">
+									<div class="label-text">
+										<p class="text-title">ポスター</p>
+										<span class="text-category">担当：デザイン</span>
+									</div>
+									<div class="label-bg"></div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="works/works-graphic-02.html">
+						<div class="portfolio graphic" data-cat="graphic">
+							<div class="portfolio-wrapper">
+								<img src="images/works/img-graphic-02.jpg" alt="" />
+								<div class="label">
+									<div class="label-text">
+										<p class="text-title">ポスター</p>
+										<span class="text-category">担当：デザイン</span>
+									</div>
+									<div class="label-bg"></div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="works/works-graphic-03.html">
+						<div class="portfolio graphic" data-cat="graphic">
+							<div class="portfolio-wrapper">
+								<img src="images/works/img-graphic-03.jpg" alt="" />
+								<div class="label">
+									<div class="label-text">
+										<p class="text-title">ポスター・折り込みチラシ</p>
+										<span class="text-category">担当：デザイン・ディレクション</span>
+									</div>
+									<div class="label-bg"></div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="works/works-graphic-04.html">
+						<div class="portfolio graphic" data-cat="graphic">
+							<div class="portfolio-wrapper">
+								<img src="images/works/img-graphic-04.jpg" alt="" />
+								<div class="label">
+									<div class="label-text">
+										<p class="text-title">折り込みチラシ</p>
+										<span class="text-category">担当：デザイン・ディレクション</span>
+									</div>
+									<div class="label-bg"></div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="works/works-graphic-05.html">
+						<div class="portfolio graphic" data-cat="graphic">
+							<div class="portfolio-wrapper">
+								<img src="images/works/img-graphic-05.jpg" alt="" />
+								<div class="label">
+									<div class="label-text">
+										<p class="text-title">ポスター・折り込みチラシ</p>
+										<span class="text-category">担当：デザイン・ディレクション</span>
+									</div>
+									<div class="label-bg"></div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="works/works-graphic-06.html">
+						<div class="portfolio graphic" data-cat="graphic">
+							<div class="portfolio-wrapper">
+								<img src="images/works/img-graphic-06.jpg" alt="" />
+								<div class="label">
+									<div class="label-text">
+										<p class="text-title">企画</p>
+										<span class="text-category">担当：企画提案・デザイン・ディレクション</span>
+									</div>
+									<div class="label-bg"></div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="works/works-graphic-07.html">
+						<div class="portfolio graphic" data-cat="graphic">
+							<div class="portfolio-wrapper">
+								<img src="images/works/img-graphic-07.jpg" alt="" />
+								<div class="label">
+									<div class="label-text">
+										<p class="text-title">企画</p>
+										<span class="text-category">担当：企画提案・デザイン・ディレクション</span>
+									</div>
+									<div class="label-bg"></div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="works/works-graphic-08.html">
+						<div class="portfolio graphic" data-cat="graphic">
+							<div class="portfolio-wrapper">
+								<img src="images/works/img-graphic-08.jpg" alt="" />
+								<div class="label">
+									<div class="label-text">
+										<p class="text-title">DM</p>
+										<span class="text-category">担当：デザイン・ディレクション</span>
+									</div>
+									<div class="label-bg"></div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="works/works-graphic-09.html">
+						<div class="portfolio graphic" data-cat="graphic">
+							<div class="portfolio-wrapper">
+								<img src="images/works/img-graphic-09.jpg" alt="" />
+								<div class="label">
+									<div class="label-text">
+										<p class="text-title">DM</p>
+										<span class="text-category">担当：デザイン・ディレクション</span>
+									</div>
+									<div class="label-bg"></div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="works/works-graphic-10.html">
+						<div class="portfolio graphic" data-cat="graphic">
+							<div class="portfolio-wrapper">
+								<img src="images/works/img-graphic-10.jpg" alt="" />
+								<div class="label">
+									<div class="label-text">
+										<p class="text-title">ポスター</p>
+										<span class="text-category">担当：デザイン・ディレクション</span>
+									</div>
+									<div class="label-bg"></div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="works/works-graphic-11.html">
+						<div class="portfolio graphic" data-cat="graphic">
+							<div class="portfolio-wrapper">
+								<img src="images/works/img-graphic-11.jpg" alt="" />
+								<div class="label">
+									<div class="label-text">
+										<p class="text-title">ポスター</p>
+										<span class="text-category">担当：デザイン・ディレクション</span>
+									</div>
+									<div class="label-bg"></div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="works/works-graphic-12.html">
+						<div class="portfolio graphic" data-cat="graphic">
+							<div class="portfolio-wrapper">
+								<img src="images/works/img-graphic-12.jpg" alt="" />
+								<div class="label">
+									<div class="label-text">
+										<p class="text-title">ポスター</p>
+										<span class="text-category">担当：デザイン・ディレクション</span>
+									</div>
+									<div class="label-bg"></div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="works/works-graphic-13.html">
+						<div class="portfolio graphic" data-cat="graphic">
+							<div class="portfolio-wrapper">
+								<img src="images/works/img-graphic-13.jpg" alt="" />
+								<div class="label">
+									<div class="label-text">
+										<p class="text-title">ポスター</p>
+										<span class="text-category">担当：デザイン</span>
+									</div>
+									<div class="label-bg"></div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<!-- graphicここまで -->
+			</ul>
+
+		</div>
+		<!-- container -->
+	</section>
+
+
+
+
+
+
+
+	<footer>
+		Copyright © 2010-2019 Shizuka Fujimoto All Rights Reserved.
+	</footer>
+
+</body>
+
+</html>
