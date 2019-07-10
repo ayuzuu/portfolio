@@ -58,7 +58,7 @@ body footer css
 ====================================== */
 body {
   width: 100%;
-  min-width: 960px;
+  /* min-width: 960px; */
   margin: 0 auto;
   font-family: 'Noto Sans', sans-serif;
   line-height: 1;
@@ -141,6 +141,16 @@ index css ここから
   right: 26%;
   animation: fuwafuwa 3s infinite;
 }
+.title-svg {
+  width: 60vw;
+  margin: 0 auto;
+}
+@media screen and (max-width: 600px) {
+  .title-svg{
+     width: 90%; 
+     display: block;
+    }
+}
 @keyframes fuwafuwa {
   0% { transform:translateY(0px); }
   50% { transform:translateY(50px); }
@@ -156,6 +166,12 @@ index css ここから
   justify-content: center;
   margin-bottom: 130px;
 }
+@media screen and (max-width: 600px) {
+  .menu ul{
+     width: 100%; 
+     display: block;
+    }
+}
 .menu li {
   width: 130px;
   font-size: 24px;
@@ -163,6 +179,13 @@ index css ここから
   color: #555;
   padding: 0 10px;
   letter-spacing: 0.02em;
+}
+@media screen and (max-width: 600px) {
+    .menu li{
+      width: 100%; 
+      font-size: 6vw;
+      margin: 6% auto 0;
+     }
 }
 .menu li a{
   color: #888;
@@ -173,7 +196,7 @@ index css ここから
   color: #79AEE2;
   font-size: 10px;
   display: block;
-  padding: 1vw 0 0;
+  padding: 10px 0 0 30px;
 }
 .menu li a:hover{
   color: #ffb7c5;
@@ -182,6 +205,13 @@ index css ここから
 }
 .fa-user-circle:before, .fa-desktop:before, .fa-palette:before {
   margin-right: 6px;
+  font-size: 20px;
+}
+@media screen and (max-width: 600px) {
+  .fa-user-circle:before, .fa-desktop:before, .fa-palette:before  {
+    margin-right: 10px;
+    font-size: 5vw;
+    }
 }
 /* ======================================
 index css ここまで
@@ -216,3 +246,4 @@ profile css ここから
   text-align: center;
   letter-spacing: 0.1em;
 }
+
