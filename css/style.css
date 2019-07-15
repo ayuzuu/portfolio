@@ -236,7 +236,7 @@ media screen ここから
 ====================================== */
 @media screen and (max-width: 600px) {
   #logo {
-  padding: 30vw 0 50vw;
+  padding: 40vw 0 60vw;
   position: relative;
 }
 #logo img{
