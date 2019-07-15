@@ -142,15 +142,12 @@ index css ここから
   right: 26%;
   animation: fuwafuwa 3s infinite;
 }
+.scroll-top {
+  display: none;
+}
 .title-svg {
   width: 60vw;
   margin: 0 auto;
-}
-@media screen and (max-width: 600px) {
-  .title-svg{
-     width: 90%; 
-     display: block;
-    }
 }
 @keyframes fuwafuwa {
   0% { transform:translateY(0px); }
@@ -167,12 +164,6 @@ index css ここから
   justify-content: center;
   margin-bottom: 130px;
 }
-@media screen and (max-width: 600px) {
-  .menu ul{
-     width: 100%; 
-     display: block;
-    }
-}
 .menu li {
   width: 130px;
   font-size: 24px;
@@ -180,14 +171,6 @@ index css ここから
   color: #555;
   padding: 0 20px;
   letter-spacing: 0.02em;
-}
-@media screen and (max-width: 600px) {
-    .menu li{
-      width: 50%; 
-      font-size: 7vw;
-      margin: 8% auto 0;
-      padding-left: 4%;
-     }
 }
 .menu li a{
   color: #888;
@@ -200,11 +183,6 @@ index css ここから
   display: block;
   padding: 10px 0 0 0;
 }
-@media screen and (max-width: 600px) {
-  .menu li span  {
-    padding-left: 4%;
-    }
-}
 .menu li a:hover{
   color: #ffb7c5;
   -webkit-transition: all .3s;
@@ -216,11 +194,7 @@ index css ここから
   display: block;
   padding-bottom: 6px;
 }
-@media screen and (max-width: 600px) {
-  .fa-user-circle:before, .fa-desktop:before, .fa-palette:before  {
-    font-size: 5.6vw;
-    }
-}
+
 /* ======================================
 index css ここまで
 ====================================== */
@@ -254,4 +228,94 @@ profile css ここから
   text-align: center;
   letter-spacing: 0.1em;
 }
+
+
+
+/* ======================================
+media screen ここから
+====================================== */
+@media screen and (max-width: 600px) {
+  #logo {
+  padding: 30vw 0 50vw;
+  position: relative;
+}
+#logo img{
+  position: absolute;
+  width: 12%;
+  top: 10%;
+  right: 8%;
+  animation: fuwafuwa 3s infinite;
+}
+.scroll-top {
+  display: block;
+  padding-top: 120px;
+  position: relative;
+  color: #79AEE2;
+  font-size: 14px;
+}
+.scroll-top span {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #79AEE2;
+  border-bottom: 1px solid #79AEE2;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb 1.5s infinite;
+  animation: sdb 1.5s infinite;
+  box-sizing: border-box;
+}
+  @-webkit-keyframes sdb {
+    0% {
+      -webkit-transform: rotate(-45deg) translate(0, 0);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+      opacity: 0;
+    }
+  }
+  @keyframes sdb {
+    0% {
+      transform: rotate(-45deg) translate(0, 0);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(-45deg) translate(-20px, 20px);
+      opacity: 0;
+    }
+  }
+
+    .title-svg{
+    width: 90%; 
+    display: block;
+    }
+    .menu ul{
+    width: 100%; 
+    display: block;
+    }
+    .menu li{
+    width: 50%; 
+    font-size: 7vw;
+    margin: 8% auto 0;
+    padding-left: 4%;
+    }
+    .menu li span  {
+    padding-left: 4%;
+    }
+    .fa-user-circle:before, .fa-desktop:before, .fa-palette:before  {
+    font-size: 5.6vw;
+    }
+}
+
+
 
