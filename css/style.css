@@ -302,6 +302,7 @@ media screen ここから
     .menu ul{
     width: 100%; 
     display: block;
+    margin: 20vw 0 10vw;
     }
     .menu li{
     width: 50%; 
