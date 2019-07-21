@@ -18,9 +18,9 @@ work css
     padding: 90px 0 0;
 }
 #work h1 img {
-    width: 250px;
-    margin: 0 auto;
-    display: block;
+    width: 24%;
+    margin: 8% auto 0;
+    display: block
 }
 
 .work-box {
