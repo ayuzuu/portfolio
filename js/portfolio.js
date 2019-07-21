@@ -1,11 +1,27 @@
 
 
-$(function(){
-  smoothScroll();  
+$(function () {
+    smoothScroll();
+
+    // $('.nav__icon').on('click', function() {
+	// 	$(this).toggleClass('active');
+	// 	$('nav ul').slideToggle();
+	// });
+
+	// $(window).on('load resize',function(){
+	// 	var w = $(window).width();
+	// 	var h = $(window).height();
+	// 	var x = 700;
+	// 	if (w >= x) {
+	// 		$('nav ul').css({ display: 'flex',height: 'auto' });
+	// 	}else {
+	// 		$('nav ul').css({ display: 'none',height: h + 'px'});
+	// 	}
+	// });
 });
 
-function smoothScroll(){
-    $('a[href^="#"]').on('click', function(){
+function smoothScroll() {
+    $('a[href^="#"]').on('click', function () {
         // scroll speed
         var speed = 400;
         // get anchor-tag value
@@ -15,56 +31,14 @@ function smoothScroll(){
         // get target position
         var position = target.offset().top;
         // smooth scroll
-        $('body, html').animate({scrollTop:position}, speed, 'swing');
+        $('body, html').animate({ scrollTop: position }, speed, 'swing');
         // URLにハッシュを追記
         var scrollTargetId = target.attr("id");
-        setTimeout(function(){
+        setTimeout(function () {
             location.hash = scrollTargetId;
             return false;
-        },500);
+        }, 500);
         return false;
     });
 }
 
-
-
-
-// $(function() {
-//   $('#index').on('inview', function(event, isInView){
-//     if (isInView) {
-//         $(this).addClass('fadeIn');
-//     }else{
-//     }
-//   });
-//   $('.contents02').on('inview', function(event, isInView){
-//     if (isInView) {
-//         $(this).addClass('fadeIn');
-//     }else{
-//     }
-//   });
-//   $('.balloon').on('inview', function(event, isInView){
-//     if (isInView) {
-//         $(this).addClass('fadeIn');
-//     }else{
-//     }
-//   });
-//   $('.profile-box').on('inview', function(event, isInView){
-//     if (isInView) {
-//         $(this).addClass('fadeIn slower');
-//     }else{
-//     }
-//   });
-
-
-// });
-
-// $(function () {
-//     $('#nav-menu li a').each(function () {
-//         var $href = $(this).attr('href');
-//         if (location.href.match($href)) {
-//             $(this).addClass('active');
-//         } else {
-//             $(this).removeClass('active');
-//         }
-//     });
-// });
