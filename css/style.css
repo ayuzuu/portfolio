@@ -88,7 +88,7 @@ width: 40%;
 margin: 0 auto;
 display: block;
 }
-#header a {
+/* #header a {
   background: transparent;
   margin: 0;
   padding: 0;
@@ -106,7 +106,7 @@ display: block;
   -moz-transition: 0.5s ease;
   -ms-transition: 0.5s ease;
   -o-transition: 0.5s ease;
-}
+} */
 #header ul li a:hover {
   color: #ffb7c5;
   -webkit-transition: all .3s;
@@ -155,7 +155,7 @@ display: block;
 }
 
 #header .nav__icon {
-  width: 36px;
+  width: 66px;
   height: 28px;
   margin-right: 10px;
   position: relative;
@@ -201,12 +201,19 @@ display: block;
 
 @media screen and (max-width: 600px) {
   #header  {
-      position: relative;
-      z-index: 999;
-      padding: 0;
+    position: relative;
+    z-index: 999;
+    padding: 0 2%;
   }
   #header h1 {
-      margin: 0 auto;
+    margin: 0 0 0 20px;
+    width: 100%;
+  }
+  #header img {
+    width: 50%;
+  }
+  #header a {
+    display: block;
   }
   #header ul {
       -webkit-flex-direction: column;
@@ -233,6 +240,7 @@ display: block;
     margin: 0px;
     padding: 2vw 0 0;
     font-size: 6vw;
+    letter-spacing: 0.1em;
   }
   #header ul li a:hover {
       color: #000;
@@ -357,6 +365,7 @@ profile css ここから
   line-height: 1.5;
   font-size: 12px;
   width: 80%;
+  text-align: justify;
 }
 .profile-text span {
   color: #79AEE2;
