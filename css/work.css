@@ -13,7 +13,7 @@ work css
     transition: all .3s;
 }
 #work {
-    width: 960px;
+    width: 100%;
     margin: 0 auto;
     padding: 90px 0 0;
 }
