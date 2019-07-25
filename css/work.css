@@ -24,7 +24,7 @@ work css
 }
 
 .work-box {
-    width: 960px;
+    width: 100%;
     position: relative;
     display: block;
     padding: 70% 0 0;
@@ -192,4 +192,28 @@ work css
     max-width:100%;
     max-height:100%;
     border: 1px solid #555 ;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    #work {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0px 0 0;
+    }
+    #work h1 img {
+        width: 60%;
+        margin: 8% auto 0;
+    }
+    .work-box {
+        width: 100%;
+        position: relative;
+        display: block;
+        padding: 70% 0 0;
+    }
+    #portfoliolist .portfolio {
+        height: auto;
+    }
 }
