@@ -59,7 +59,6 @@ body footer css
 ====================================== */
 body {
   width: 100%;
-  /* min-width: 960px; */
   margin: 0 auto;
   font-family: 'Noto Sans', sans-serif;
   line-height: 1;
@@ -84,29 +83,10 @@ nav-menu css
   z-index: 10;
 }
 #header img {
-width: 40%;
-margin: 0 auto;
-display: block;
+  width: 40%;
+  margin: 0 auto;
+  display: block;
 }
-/* #header a {
-  background: transparent;
-  margin: 0;
-  padding: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  text-decoration: none;
-  padding: 0 15px;
-  margin: 15px;
-  font-size: 14px;
-  color: #fff;
-  font-weight: bold;
-  letter-spacing: 0.2em;
-  transition: 0.5s ease;
-  -webkit-transition: 0.5s ease;
-  -moz-transition: 0.5s ease;
-  -ms-transition: 0.5s ease;
-  -o-transition: 0.5s ease;
-} */
 #header ul li a:hover {
   color: #ffb7c5;
   -webkit-transition: all .3s;
@@ -142,18 +122,16 @@ display: block;
 }
 #header ul span {
   color: #c4dcf5;
-    font-size: 10px;
-    display: block;
-    margin-top: 6px;
-    text-align: center;
-    letter-spacing: 0.1em;
+  font-size: 10px;
+  display: block;
+  margin-top: 6px;
+  text-align: center;
+  letter-spacing: 0.1em;
 }
-
 #header .nav__icon,
 #header .nav__icon span {
   display: none;
 }
-
 #header .nav__icon {
   width: 66px;
   height: 28px;
@@ -161,7 +139,6 @@ display: block;
   position: relative;
   cursor: pointer;
 }
-
 #header .nav__icon span {
   background: rgba(255, 255, 255, 1);
   position: absolute;
@@ -170,34 +147,26 @@ display: block;
   height: 4px;
   border-radius: 4px;
 }
-
 #header.nav__icon span:nth-of-type(1) {
   top: 0;
 }
-
 #header .nav__icon span:nth-of-type(2) {
   top: 12px;
 }
-
 #header .nav__icon span:nth-of-type(3) {
   bottom: 0;
 }
-
 #header .nav__icon.active span:nth-of-type(1) {
   -webkit-transform: translateY(12px) rotate(-45deg);
   transform: translateY(12px) rotate(-45deg);
 }
-
 #header .nav__icon.active span:nth-of-type(2) {
   display: none;
 }
-
 #header  .nav__icon.active span:nth-of-type(3) {
   -webkit-transform: translateY(-12px) rotate(45deg);
   transform: translateY(-12px) rotate(45deg);
 }
-
-
 
 @media screen and (max-width: 600px) {
   #header  {
@@ -216,19 +185,19 @@ display: block;
     display: block;
   }
   #header ul {
-      -webkit-flex-direction: column;
-      flex-direction: column;
-      -webkit-justify-content: center;
-      justify-content: center;
-      background: rgba(0, 0, 0, .8);
-      position: absolute;
-      top: 100%;
-      left: 0px;
-      width: 100%;
-      height: 100vh;
-      z-index: 980;
-      display: none;
-      padding: 24vw 0;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, .8);
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    z-index: 980;
+    display: none;
+    padding: 24vw 0;
   }
   #header ul li {
     padding: 6vw;
@@ -236,22 +205,23 @@ display: block;
   }
   #header  ul li a {
     display: block;
+    font-weight: bold;
     background: transparent;
     margin: 0px;
     padding: 2vw 0 0;
     font-size: 6vw;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.16em;
   }
   #header ul li a:hover {
-      color: #000;
-      background: #fff;
+    color: #000;
+    background: #fff;
   }
   #header .nav__icon,
   #header .nav__icon span {
-      display: inline-block;
-      transition: all .4s;
-      box-sizing: border-box;
-      z-index: 999;
+    display: inline-block;
+    transition: all .4s;
+    box-sizing: border-box;
+    z-index: 999;
   }
 }
 
@@ -308,7 +278,7 @@ index css ここから
 .menu ul {
   display: flex;
   justify-content: center;
-  margin-bottom: 130px;
+  margin: 70px 0 130px;
 }
 .menu li {
   width: 130px;
@@ -394,7 +364,7 @@ media screen ここから
 ====================================== */
 @media screen and (max-width: 600px) {
 #logo {
-  padding: 40vw 0 60vw;
+  padding: 40vw 0 0;
   position: relative;
 }
 #logo img{
@@ -459,7 +429,7 @@ media screen ここから
     .menu ul{
     width: 100%; 
     display: block;
-    margin: 20vw 0 50vw;
+    margin: 70vw 0 50vw;
     background-color: #fff;
     position: relative;
     }
