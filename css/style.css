@@ -176,7 +176,8 @@ header css
 
 @media screen and (max-width: 600px) {
   #header  {
-    position: relative;
+    position: fixed;
+    top: 0;
     z-index: 999;
     padding: 0 2%;
   }
@@ -389,8 +390,8 @@ media screen ここから
   display: block;
   padding-top: 120px;
   position: relative;
-  color: #fff;
-  font-size: 14px;
+  color: #5d82e0;
+  font-size: 4vw;
   overflow : hidden;
 	outline : none;
 }
@@ -401,8 +402,8 @@ media screen ここから
   width: 24px;
   height: 24px;
   margin-left: -12px;
-  border-left: 2px solid #fff;
-  border-bottom: 2px solid #fff;
+  border-left: 3px solid #000bffc2;
+  border-bottom: 3px solid #000bffc2;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   -webkit-animation: sdb 1.5s infinite;
