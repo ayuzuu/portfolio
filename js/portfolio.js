@@ -1,8 +1,9 @@
-
-
+$(function () {
+    smoothScroll()
+})
 
 function smoothScroll() {
-    $('a[href^="#"]').on('click', function () {
+    $('a[href^="#menu-top"]').on('click', function () {
         // scroll speed
         var speed = 400;
         // get anchor-tag value
@@ -20,10 +21,6 @@ function smoothScroll() {
             return false;
         }, 500);
         return false;
-    });
-
-    $("#header ul").on('touchmove.noScroll', function(e) {
-        e.preventDefault();
     });
 }
 
