@@ -71,6 +71,7 @@ footer {
 }
 @media screen and (max-width: 600px) {
   body {
+    /* background: linear-gradient( #bfc1ff, #b4f7f8); */
     
   }
 }
@@ -445,7 +446,6 @@ media screen ここから
     width: 100%; 
     display: block;
     margin: 70vw 0 50vw;
-    background-color: #fff;
     position: relative;
     }
     .menu li{
