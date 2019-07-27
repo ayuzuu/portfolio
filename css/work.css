@@ -207,7 +207,7 @@ work css
 @media screen and (max-width: 600px) {
     #work {
         width: 95%;
-        margin: 0 auto;
+        margin: 20% auto 0;
         padding: 0px 0 0;
     }
     #work h1 img {

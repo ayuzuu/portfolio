@@ -180,6 +180,9 @@ header css
     top: 0;
     z-index: 999;
     padding: 0 2%;
+    background: -moz-linear-gradient(65deg, #517bdf, #b09fea); 
+    background: -webkit-linear-gradient(65deg, #517bdf, #b09fea); 
+    background: linear-gradient(25deg, #517bdf, #b09fea); 
   }
   #header h1 {
     margin: 0 0 0 20px;
@@ -356,6 +359,7 @@ profile css ここから
 @media screen and (max-width: 600px) {
   #profile {
     padding: 0;
+    margin: 20% 0 0;
   }
   #profile h1 img{
     width: 60%;
@@ -386,7 +390,7 @@ media screen ここから
 }
 .scroll-top {
   width: 30%;
-  margin: 0 auto;
+  margin: 12% auto 0;
   display: block;
   padding-top: 120px;
   position: relative;
@@ -402,8 +406,8 @@ media screen ここから
   width: 24px;
   height: 24px;
   margin-left: -12px;
-  border-left: 3px solid #000bffc2;
-  border-bottom: 3px solid #000bffc2;
+  border-left: 3px solid #3b43ffc2;
+  border-bottom: 3px solid #3b43ffc2;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   -webkit-animation: sdb 1.5s infinite;
@@ -452,7 +456,7 @@ media screen ここから
     .menu li{
     width: 50%; 
     font-size: 7vw;
-    margin: 8% auto 0;
+    margin: 10% auto 0;
     padding-left: 4%;
     }
     .menu li span  {
