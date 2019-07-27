@@ -255,6 +255,11 @@ header css
 /* ======================================
 index css ここから
 ====================================== */
+#mv-top {
+  background-image: url(/images/common/bg.png);
+  background-size: cover;
+  background-position: 0 90%;
+}
 #logo {
   text-align: center;
   padding: 10vw 0;
@@ -299,15 +304,15 @@ index css ここから
   letter-spacing: 0.02em;
 }
 .menu li a{
-  color: #888;
+  color: #5274bb;
   font-weight: bold;
   letter-spacing: 0.05em;
 }
 .menu li span{
-  color: #79AEE2;
+  color: #5d82e0;
   font-size: 10px;
   display: block;
-  padding: 10px 0 0 0;
+  padding: 2px 0 0 0;
 }
 .menu li a:hover{
   color: #ffb7c5;
@@ -374,12 +379,15 @@ profile css ここから
 media screen ここから
 ====================================== */
 @media screen and (max-width: 600px) {
+  #mv-top {
+   background: none;
+  }
 #logo {
   padding: 40vw 0 0;
   position: relative;
   background-image: url(/images/common/bg.png);
-    background-size: cover;
-    min-height: 100vh;
+  background-size: cover;
+  min-height: 100vh;
 }
 #logo img{
   position: absolute;
