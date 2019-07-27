@@ -199,7 +199,7 @@ work css
 
 @media screen and (max-width: 600px) {
     #work {
-        width: 100%;
+        width: 95%;
         margin: 0 auto;
         padding: 0px 0 0;
     }
@@ -211,9 +211,10 @@ work css
         width: 100%;
         position: relative;
         display: block;
+        margin: 0 auto;
         padding: 70% 0 0;
     }
-    #portfoliolist .portfolio {
-        height: auto;
+    .work-box, .work-box1, .work-box2, .work-box3, .work-box4, .work-box-web {
+        width: 100%;
     }
 }

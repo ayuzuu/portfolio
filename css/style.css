@@ -71,7 +71,7 @@ footer {
 }
 
 /* ======================================
-nav-menu css
+header css
 ====================================== */
 #header {
   width: 100%;
@@ -375,11 +375,15 @@ media screen ここから
   animation: fuwafuwa 3s infinite;
 }
 .scroll-top {
+  width: 30%;
+  margin: 0 auto;
   display: block;
   padding-top: 120px;
   position: relative;
   color: #79AEE2;
   font-size: 14px;
+  overflow : hidden;
+	outline : none;
 }
 .scroll-top span {
   position: absolute;
@@ -395,6 +399,9 @@ media screen ここから
   -webkit-animation: sdb 1.5s infinite;
   animation: sdb 1.5s infinite;
   box-sizing: border-box;
+}
+.scroll-top span:active{
+  color : none;
 }
   @-webkit-keyframes sdb {
     0% {
