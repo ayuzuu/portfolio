@@ -69,6 +69,11 @@ footer {
   font-size: 10px;
   color: #555;
 }
+@media screen and (max-width: 600px) {
+  body {
+    
+  }
+}
 
 /* ======================================
 header css
@@ -366,6 +371,9 @@ media screen ここから
 #logo {
   padding: 40vw 0 0;
   position: relative;
+  background-image: url(/images/common/bg.png);
+    background-size: cover;
+    min-height: 100vh;
 }
 #logo img{
   position: absolute;
@@ -380,7 +388,7 @@ media screen ここから
   display: block;
   padding-top: 120px;
   position: relative;
-  color: #79AEE2;
+  color: #fff;
   font-size: 14px;
   overflow : hidden;
 	outline : none;
@@ -392,8 +400,8 @@ media screen ここから
   width: 24px;
   height: 24px;
   margin-left: -12px;
-  border-left: 1px solid #79AEE2;
-  border-bottom: 1px solid #79AEE2;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   -webkit-animation: sdb 1.5s infinite;
