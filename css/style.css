@@ -148,7 +148,7 @@ header css
   cursor: pointer;
 }
 #header .nav__icon span {
-  background: #fff;
+  background: #658ee1;
   position: absolute;
   left: 0;
   width: 100%;
@@ -184,7 +184,7 @@ header css
     top: 0;
     right: 0;
     z-index: 999;
-    padding: 0 2%;
+    padding: 0;
     background:none;
   }
   #header nav {
