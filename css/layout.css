@@ -24,6 +24,7 @@ html {
 	text-decoration:none;
 	color:#666;
 	cursor: pointer;
+	font-weight: bold;
 }
 #filters li span:hover{
 	color: #79AEE2;
@@ -31,7 +32,9 @@ html {
     transition: all .3s;
 }
 #filters li span.active {
-	background: #79AEE2;
+	background: -moz-linear-gradient(65deg, #517bdf, #b09fea); 
+  	background: -webkit-linear-gradient(65deg, #517bdf, #b09fea); 
+  	background: linear-gradient(25deg, #517bdf, #b09fea); 
 	color:#fff;	
 } 
 #portfoliolist .portfolio {
@@ -70,7 +73,7 @@ transition:         all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
 transition:         all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 .portfolio .label-bg {
-	background: #79AEE2;
+	background: #517bdf;
 	opacity: 0.7;
 	width: 100%;
 	height:100%;

@@ -4,7 +4,7 @@
 work css
 ====================================== */
 .fa-arrow-left {
-    color: #79AEE2;
+    color: #658ee1;
     font-size: 16px;
 }
 .fa-arrow-left:hover {
@@ -159,8 +159,8 @@ work css
 }
 .work-text span {
     padding: 2px 10px;
-    color: #79AEE2;
-    border: 1px #79AEE2 solid;
+    color: #658ee1;
+    border: 1px #658ee1 solid;
     margin-right: 15px;
     font-size: 12px;
 }
