@@ -96,12 +96,12 @@ header css
   display: block;
 }
 #header ul li a:hover {
-  color: #ffb7c5;
+  color: #658ee1;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
 #header ul li a.active    {
-  color: #ffb7c5;
+  color: #658ee1;
 }
 #header nav {
   max-width: 1180px;
@@ -190,8 +190,12 @@ header css
     letter-spacing: 0.16em;
   }
   #header ul li a:hover {
-    color: #000;
-    background: #fff;
+    opacity: 0.7;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
   }
   #header .nav__icon,
   #header .nav__icon span {
@@ -263,9 +267,13 @@ header css
 index css ここから
 ====================================== */
 #mv-top {
-  background-image: url(/images/common/bg.png);
+  background-image: url(/images/common/bg-pc.png);
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 90%;
+}
+#mv-top #header {
+  display: none;
 }
 #logo {
   text-align: center;
@@ -303,28 +311,31 @@ index css ここから
   margin: 70px 0 130px;
 }
 .menu li {
-  width: 130px;
-  font-size: 24px;
+  width: 160px;
+  font-size: 28px;
   font-family: 'Noto Sans', sans-serif;
   color: #555;
   padding: 0 20px;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.1em;
 }
 .menu li a{
-  color: #5274bb;
+  color: #658ee1;
   font-weight: bold;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1em;
 }
 .menu li span{
   color: #5d82e0;
   font-size: 10px;
   display: block;
-  padding: 2px 0 0 0;
+  padding: 4px 0 0 0;
 }
 .menu li a:hover{
-  color: #ffb7c5;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  opacity: 0.5;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
 }
 .fa-user-circle:before, .fa-desktop:before, .fa-palette:before {
   margin-right: 6px;
@@ -360,7 +371,7 @@ profile css ここから
   text-align: justify;
 }
 .profile-text span {
-  color: #79AEE2;
+  color: #658ee1;
   font-size: 24px;
   display: block;
   padding: 1vw 0 20px;
