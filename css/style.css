@@ -179,6 +179,8 @@ header css
 @media screen and (max-width: 600px) {
   #header  {
     position: fixed;
+    box-sizing: border-box;
+    width: 100%;
     top: 0;
     right: 0;
     z-index: 999;
