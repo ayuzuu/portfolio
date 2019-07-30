@@ -84,28 +84,18 @@ header css
   background: -moz-linear-gradient(65deg, #517bdf, #b09fea); 
   background: -webkit-linear-gradient(65deg, #517bdf, #b09fea); 
   background: linear-gradient(25deg, #517bdf, #b09fea); 
-  padding: 14px 0;
+  padding: 1vw 0;
   list-style: none;
   margin-bottom: 50px;
   position: fixed;
   z-index: 10;
 }
 #header img {
-  width: 40%;
+  width: 100%;
   margin: 0 auto;
   display: block;
 }
-#header ul li a:hover {
-  color: #658ee1;
-  -webkit-transition: all .3s;
-  transition: all .3s;
-}
-#header ul li a.active    {
-  color: #658ee1;
-}
 #header nav {
-  max-width: 1180px;
-  height: 80px;
   margin: 0px auto;
   display: -webkit-flex;
   display: flex;
@@ -117,22 +107,42 @@ header css
   display: flex;
   list-style: none;
   width: 90%;
+  height: 100px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   background:transparent;
 }
+#header ul li {
+  margin-top: 20px;
+}
+#header ul li:nth-child(1) {
+  width: 28%;
+  margin-top: 0;
+}
 #header ul li a {
   color: #fff;
   margin: 0px 2vw;
-  padding: 10px;
+  padding: 0 10px;
   border-radius: 5px;
+  display: block;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+#header ul li a:hover {
+  color: #dbd1ff;
+  opacity: 0.6;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+#header ul li a.active    {
+  color: #dbd1ff;
 }
 #header ul span {
-  color: #c4dcf5;
+  color: #fff;
   font-size: 10px;
   display: block;
-  margin-top: 6px;
+  margin: 0 0 0 20px;
   text-align: center;
   letter-spacing: 0.1em;
 }
@@ -179,6 +189,10 @@ header css
   #header ul li {
     padding: 6vw;
     text-align: center;
+  }
+  #header ul li:nth-child(1) {
+    width: 100%;
+    margin-top: 0;
   }
   #header  ul li a {
     display: block;
@@ -311,8 +325,8 @@ index css ここから
   margin: 70px 0 130px;
 }
 .menu li {
-  width: 160px;
-  font-size: 28px;
+  width: 180px;
+  font-size: 26px;
   font-family: 'Noto Sans', sans-serif;
   color: #555;
   padding: 0 20px;
@@ -324,7 +338,7 @@ index css ここから
   letter-spacing: 0.1em;
 }
 .menu li span{
-  color: #5d82e0;
+  color: #648ee1;
   font-size: 10px;
   display: block;
   padding: 4px 0 0 0;
@@ -382,7 +396,7 @@ profile css ここから
 @media screen and (max-width: 600px) {
   #profile {
     padding: 0;
-    margin: 20% 0 0;
+    margin: 10% 0 0;
   }
   #profile h1 img{
     width: 60%;
