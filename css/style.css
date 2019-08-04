@@ -154,12 +154,15 @@ header css
     width: 100%;
     top: 0;
     right: 0;
-    z-index: 999;
+    z-index: 100;
     padding: 0;
     background:none;
   }
   #header nav {
     height: 10vh;
+    background: -moz-linear-gradient(65deg, #517bdf, #b09fea);
+    background: -webkit-linear-gradient(65deg, #517bdf, #b09fea);
+    background: linear-gradient(25deg, #517bdf, #b09fea);
   }
   #header h1 {
     margin: 0 0 0 20px;
@@ -223,7 +226,7 @@ header css
     cursor: pointer;
   }
   #header .nav__icon span {
-    background: #658ee1;
+    background: #fff;
     position: absolute;
     left: 0;
     height: 4px;
