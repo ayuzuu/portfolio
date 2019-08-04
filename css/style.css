@@ -354,6 +354,12 @@ index css ここから
     -o-transition: all .3s ease;
     transition: all .3s ease;
 }
+.back-link a{
+  width: 90%;
+  margin: 6% 0 0 4%;
+  z-index: 1111;
+  color: #789ce4;
+}
 .fa-user-circle:before, .fa-desktop:before, .fa-palette:before {
   margin-right: 6px;
   font-size: 22px;
@@ -399,7 +405,7 @@ profile css ここから
 @media screen and (max-width: 600px) {
   #profile {
     padding: 0;
-    margin: 10% 0 0;
+    margin: 24% 0 0;
   }
   #profile h1 img{
     width: 60%;
