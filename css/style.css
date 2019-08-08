@@ -114,7 +114,9 @@ header css
   background:transparent;
 }
 #header ul li {
-  margin-top: 2vw;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  
 }
 #header ul li:nth-child(1) {
   width: 26%;
@@ -126,7 +128,7 @@ header css
   padding: 0 10px;
   border-radius: 5px;
   display: block;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.2em;
   font-weight: bold;
 }
 #header ul li a:hover {
@@ -142,9 +144,9 @@ header css
   color: #fff;
   font-size: 10px;
   display: block;
-  margin: 0 0 0 20px;
+  margin: 0 0 0 20%;
   text-align: center;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.2em;
 }
 
 @media screen and (max-width: 600px) {
