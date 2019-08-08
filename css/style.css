@@ -362,7 +362,8 @@ index css ここから
 }
 .back-link a{
   position: absolute;
-  top: -10%;
+  top: -30px;
+  left: 0;
   margin: 6% 0 0 4%;
   z-index: 1111;
   color: #789ce4;
