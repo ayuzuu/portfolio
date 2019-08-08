@@ -114,7 +114,7 @@ header css
   background:transparent;
 }
 #header ul li {
-  margin-top: 1vw;
+  margin-top: 2vw;
 }
 #header ul li:nth-child(1) {
   width: 26%;
@@ -378,11 +378,11 @@ profile css ここから
 #profile {
   width: 100%;
   margin: 0 auto;
-  padding: 90px 0 0;
+  padding: 12% 0 0;
 }
 #profile h1 img{
   width: 24%;
-  margin: 8% auto 0;
+  margin: 0 auto;
   display: block
 }
 .profile-text {
