@@ -296,7 +296,7 @@ index css ここから
 }
 #logo {
   text-align: center;
-  padding: 10vw 0;
+  padding: 16vw 0 2vw;
   position: relative;
 }
 #logo img{
@@ -346,7 +346,7 @@ index css ここから
   color: #648ee1;
   font-size: 10px;
   display: block;
-  padding: 4px 0 0 0;
+  padding: 4px 0 0 30px;
 }
 .menu li a:hover{
   opacity: 0.5;
