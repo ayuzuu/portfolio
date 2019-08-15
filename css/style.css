@@ -215,6 +215,9 @@ header css
     -o-transition: all .3s ease;
     transition: all .3s ease;
   }
+  #header ul span {
+    margin: 0 0 0 8%;
+  }
   #header .nav__icon,
   #header .nav__icon span {
     display: none;
@@ -413,7 +416,7 @@ profile css ここから
 @media screen and (max-width: 600px) {
   #profile {
     padding: 0;
-    margin: 24% 0 0;
+    margin: 34% 0 0;
   }
   #profile h1 img{
     width: 60%;
