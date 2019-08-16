@@ -5,8 +5,8 @@ work css
 ====================================== */
 .fa-arrow-left {
     color: #658ee1;
-    font-size: 16px;
-}
+    font-size: 14px;
+    }
 .fa-arrow-left:hover {
     color: #ffb7c5;
     -webkit-transition: all .3s;
@@ -23,11 +23,13 @@ work css
     display: block
 }
 
+/* graphic */
 .work-box {
-    width: 100%;
+    width: 90%;
     position: relative;
     display: block;
     padding: 70% 0 0;
+    margin: 0 auto;
 }
 .work-box .img-box {
     position: absolute;
@@ -58,7 +60,8 @@ work css
     box-shadow:0px 0px 16px 4px #d4d4d4;
 }
 .work-box2 {
-    width: 960px;
+    width: 90%;
+    margin: 0 auto;
     position: relative;
     display: block;
     padding: 84% 0 0;
@@ -92,7 +95,8 @@ work css
     box-shadow:0px 0px 16px 4px #d4d4d4;
 }
 .work-box3 {
-    width: 960px;
+    width: 90%;
+    margin: 0 auto;
     position: relative;
     display: block;
     padding: 70% 0 0;
@@ -126,7 +130,8 @@ work css
     box-shadow:0px 0px 16px 4px #d4d4d4;
 }
 .work-box4 {
-    width: 960px;
+    width: 90%;
+    margin: 0 auto;
     position: relative;
     display: block;    
 }
@@ -218,7 +223,6 @@ work css
         margin: 0 auto;
     }
     .work-box {
-        width: 100%;
         position: relative;
         display: block;
         margin: 0 auto;
