@@ -42,7 +42,7 @@ html {
 	-moz-box-sizing: border-box;
 	-o-box-sizing: border-box;
 	width:23%;
-	height: 165px;
+	height: auto;
 	margin:1%;
 	display:none;
 	float:left;
@@ -51,7 +51,6 @@ html {
 .portfolio-wrapper {
 	overflow:hidden;
 	position: relative !important;
-	background: #666;
 	cursor:pointer;
 }
 .portfolio-wrapper a{
