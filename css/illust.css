@@ -23,7 +23,6 @@ work css
     display: block
 }
 
-/* graphic */
 .illust-box {
     width: 90%;
     position: relative;
@@ -37,6 +36,9 @@ work css
     top: 10%;
     left: 0;
     z-index: 1
+}
+.illust-box .img-box video {
+    width: 100%;
 }
 .illust-box .img-box img {
     width:auto;
@@ -195,7 +197,7 @@ work css
         padding: 70% 0 0;
     }
     .illust-box, .illust-box1, .illust-box2, .illust-box3, .illust-box4, .illust-box-web {
-        width: 100%;
+        width: 90%;
     }
     .fa-arrow-left {
         font-size: 4vw;
