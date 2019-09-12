@@ -288,6 +288,12 @@ header css
 /* ======================================
 index css ここから
 ====================================== */
+.movetext {
+  opacity:0;
+}
+.movetext span {
+  opacity:0;
+}
 #mv-top {
   background-image: url(/images/common/bg-pc.png);
   background-repeat: no-repeat;
@@ -312,12 +318,6 @@ index css ここから
 }
 #mv-top #header {
   display: none;
-}
-.movetext {
-  opacity:0;
-}
-.movetext span {
-  opacity:0;
 }
 .scroll-top {
   display: none;
@@ -397,10 +397,12 @@ profile css ここから
   margin: 0 auto;
   padding: 12% 0 0;
 }
-#profile h1 img{
-  width: 26%;
-  margin: 0 auto;
-  display: block
+#profile h1{
+  text-align: center;
+  color: #658ee1;
+  font-size: 11vw;
+  margin-bottom: 2vw;
+  font-family: 'Damion', cursive;
 }
 .profile-text {
   margin: 0 auto;
@@ -445,12 +447,10 @@ profile css ここから
 @media screen and (max-width: 600px) {
   #profile {
     padding: 0;
-    margin: 34% 0 0;
+    margin: 28% 0 0;
   }
-  #profile h1 img{
-    width: 60%;
-    margin: 8% auto 0;
-    display: block
+  #profile h1 {
+    font-size: 24vw;
   }
 
 }

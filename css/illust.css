@@ -3,8 +3,17 @@
 /* ======================================
 work css
 ====================================== */
-#ilust {
-    width: 90%;
+#illust {
+    width: 100%;
+    margin: 0 auto;
+    padding: 12% 0 0;
+}
+#illust h1 {
+    text-align: center;
+    color: #658ee1;
+    font-size: 11vw;
+    margin-bottom: 2vw;
+    font-family: 'Damion', cursive;
 }
 .fa-arrow-left {
     color: #658ee1;
@@ -20,11 +29,6 @@ work css
     margin: 0 auto;
     padding: 12% 0 0;
     display: flex;
-}
-.illust-area h1 img {
-    width: 24%;
-    margin: 0 auto;
-    display: block
 }
 .illust-area-box {
     width: ;
