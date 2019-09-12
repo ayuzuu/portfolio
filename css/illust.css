@@ -87,15 +87,19 @@ work css
 
 
 @media screen and (max-width: 600px) {
-    .illust-area {
+    #illust {
         width: 95%;
-        margin: 34% auto 0;
+        margin: 28% auto 0;
         padding: 0 0 0;
-        display: block;
     }
-    .illust-area h1 img {
-        width: 60%;
-        margin: 0 auto;
+    #illust h1 {
+        font-size: 24vw;
+       margin-bottom: 6vw;
+       letter-spacing: 0.03em;
+    }
+    .illust-area {
+        padding: 0;
+        display: block;
     }
     .illust-box {
         position: relative;
