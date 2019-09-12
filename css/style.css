@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Damion&display=swap');
 
 /* ======================================
 reset css
@@ -293,28 +294,33 @@ index css ここから
   background-size: cover;
   background-position: 0 90%;
 }
+#mv-top h1 {
+  font-family: 'Damion', cursive;
+  color: #fff;
+  font-size: 13vw;
+  padding: 12vw 0 0;
+  margin: 0 auto;
+  text-align: center;
+}
+#mv-top .name {
+  font-family: 'Damion', cursive;
+  color: #fff;
+  font-size: 2.8vw;
+  margin: 0 auto;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
 #mv-top #header {
   display: none;
 }
-#logo {
-  text-align: center;
-  padding: 16vw 0 2vw;
-  position: relative;
+.movetext {
+  opacity:0;
 }
-#logo img{
-  position: absolute;
-  width: 6%;
-  max-width: 200px;
-  top: 10%;
-  right: 26%;
-  animation: fuwafuwa 3s infinite;
+.movetext span {
+  opacity:0;
 }
 .scroll-top {
   display: none;
-}
-.title-svg {
-  width: 60vw;
-  margin: 0 auto;
 }
 @keyframes fuwafuwa {
   0% { transform:translateY(0px); }
@@ -454,22 +460,23 @@ profile css ここから
 media screen ここから
 ====================================== */
 @media screen and (max-width: 600px) {
-  #mv-top {
-   background: none;
-  }
+#mv-top {
+  background: none;
+}
+#mv-top h1 {
+  font-size: 24vw;
+  padding: 10vw 0 2vw;
+}
+#mv-top .name {
+  color: #fff;
+  font-size: 6vw;
+}
 #logo {
   padding: 40vw 0 0;
   position: relative;
   background-image: url(/images/common/bg.png);
   background-size: cover;
   min-height: 100vh;
-}
-#logo img{
-  position: absolute;
-  width: 12%;
-  top: 10%;
-  right: 8%;
-  animation: fuwafuwa 3s infinite;
 }
 .scroll-top {
   width: 30%;
@@ -480,7 +487,8 @@ media screen ここから
   color: #5d82e0;
   font-size: 4vw;
   overflow : hidden;
-	outline : none;
+  outline : none;
+  text-align: center;
 }
 .scroll-top span {
   position: absolute;
