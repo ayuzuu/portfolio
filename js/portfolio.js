@@ -27,7 +27,7 @@ function smoothScroll() {
 
 
 function moveText() {
-    $('#mv-top .movetext').each(function(){
+    $('.movetext').each(function(){
         //一文字ずつ<span>で括る
         $(this).children().addBack().contents().each(function() {
             if (this.nodeType == 3) {
