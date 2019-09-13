@@ -11,14 +11,16 @@ work css
 #illust h1 {
     text-align: center;
     color: #658ee1;
-    font-size: 11vw;
+    font-size: 6vw;
     margin-bottom: 2vw;
-    font-family: 'Damion', cursive;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    font-family: 'Montserrat', sans-serif;
 }
 .fa-arrow-left {
     color: #658ee1;
     font-size: 14px;
-    }
+}
 .fa-arrow-left:hover {
     color: #ffb7c5;
     -webkit-transition: all .3s;
@@ -27,7 +29,6 @@ work css
 .illust-area {
     width: 100%;
     margin: 0 auto;
-    padding: 12% 0 0;
     display: flex;
 }
 .illust-area-box {
@@ -53,14 +54,15 @@ work css
     max-height:100%;
     box-shadow:0px 0px 16px 4px #d4d4d4;
 }
-
-
 .illust-text {
     width: 90%;
     display: block;
     margin: 50px auto 0;
     line-height: 1.5;
     color: #555;
+}
+.mt0 {
+    margin-top: 0;
 }
 .illust-text h2 {
     color: #555;
@@ -93,7 +95,7 @@ work css
         padding: 0 0 0;
     }
     #illust h1 {
-        font-size: 24vw;
+        font-size: 14vw;
        margin-bottom: 6vw;
        letter-spacing: 0.03em;
     }

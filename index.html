@@ -14,13 +14,14 @@
     <script type="text/javascript" src="/js/load-parts.js"></script>
     <script src="/js/jquery.inview.min.js"></script>
     <script src="/js/portfolio.js"></script>
-
 </head>
-<body id="mv-top">
+<body id="mv-top" class="" data-rellax-speed="1">
     <div data-load-parts="/header.html"></div>
     <div id="logo" class="animated fadeIn slower">
-        <h1 class="movetext">Portforio.</h1>
-        <p class="name movetext">Fujimoto Shizuka</p>
+        <div class="rellax" data-rellax-speed="6">
+            <h1 class="movetext">Portforio.</h1>
+            <p class="name movetext">Fujimoto Shizuka</p>
+        </div>
         <a class="scroll-top" href="#menu-top"><span></span>Scroll</a>
     </div>
     <div class="menu animated fadeIn slower">
@@ -33,6 +34,10 @@
     </div>
     <footer>
         Copyright © 2010-2019 Shizuka Fujimoto All Rights Reserved.
-    </footer>   
+    </footer>
+    <script src="/js/rellax.min.js"></script>
+    <script>
+        var rellax = new Rellax('.rellax');
+    </script>
 </body>
 </html>
