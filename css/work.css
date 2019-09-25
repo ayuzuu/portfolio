@@ -159,6 +159,9 @@ work css
     line-height: 1.5;
     color: #555;
 }
+.work-text li:nth-child(4) {
+    margin-bottom: 10px;
+}
 .work-text h2 {
     color: #555;
     font-size: 14px;
@@ -219,7 +222,7 @@ work css
 @media screen and (max-width: 600px) {
     #work {
         width: 95%;
-        margin: 28% auto 0;
+        margin: 34% auto 0;
         padding: 0 0 0;
     }
     #work h1{
