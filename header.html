@@ -29,9 +29,10 @@
 		var x = 700;
 		if (w >= x) {
 			$('nav ul').css({ display: 'flex', height: 'auto' });
+			$('body,html').css({"overflow":"hidden","height":"100%"});
 		} else {
 			$('nav ul').css({ display: 'none', height: '100vh' });
-			$('body,html').css({"overflow":"hidden","height":"100%"});
+			$('body,html').css({"overflow":"visible","height":"auto"});
 		}
 	});
 </script>
