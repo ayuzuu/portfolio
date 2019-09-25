@@ -30,7 +30,8 @@
 		if (w >= x) {
 			$('nav ul').css({ display: 'flex', height: 'auto' });
 		} else {
-			$('nav ul').css({ display: 'none', height: h + 'px' });
+			$('nav ul').css({ display: 'none', height: '100vh' });
+			$('body,html').css({"overflow":"hidden","height":"100%"});
 		}
 	});
 </script>
