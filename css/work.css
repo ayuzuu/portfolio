@@ -159,6 +159,9 @@ work css
     line-height: 1.5;
     color: #555;
 }
+.work-text li {
+    display: flex;
+}
 .work-text li:nth-child(4) {
     margin-bottom: 10px;
 }
@@ -166,11 +169,26 @@ work css
     color: #555;
     font-size: 14px;
     margin-bottom: 10px;
+    padding: 2px 10px;
+    display: inline-block;
+    width: 88px;
+    height: 24px;
+    color: #658ee1;
+    border: 1px #658ee1 solid;
+    margin-right: 15px;
+    font-size: 12px;
+    text-align: center;
+}
+.work-text .desc-text {
+    width: 60%;
+    word-wrap: break-word;
 }
 .work-text p {
     font-size: 14px;
+    color: #555;
 }
-.work-text span {
+
+/* .work-text span {
     padding: 2px 10px;
     display: inline-block;
     width: 88px;
@@ -179,7 +197,7 @@ work css
     margin-right: 15px;
     font-size: 12px;
     text-align: center;
-}
+} */
 
 
 /* web */
