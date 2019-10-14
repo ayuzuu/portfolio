@@ -428,9 +428,9 @@ profile css ここから
 }
 .profile-text span {
   color: #658ee1;
-  font-size: 24px;
+  font-size: 22px;
   display: block;
-  padding: 0 0 50px;
+  padding: 10px 0 10px;
   text-align: center;
   letter-spacing: 0.1em;
 }
