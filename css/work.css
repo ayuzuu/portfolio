@@ -35,122 +35,226 @@ work css
     padding: 70% 0 0;
     margin: 0 auto;
 }
-.work-box .img-box {
+.img-box-aqa, .img-box-deli {
     position: absolute;
     width: 70%;
     top: 10%;
     left: 0;
     z-index: 1
 }
-.work-box .img-box img {
-    width:auto;
-    height:auto;
-    max-width:100%;
-    max-height:100%;
+.img-box-aqa img, .img-box-deli img {
+    width:100%;
     box-shadow:0px 0px 16px 4px #d4d4d4;
 }
-.work-box .img-box2 {
+.img-box-aqa2, .img-box-deli2 {
     position: absolute;
-    width: 40%;
+    width: 50%;
     top: 46%;
-    left: 60%;
+    right: 0%;
     z-index: 2;
 }
-.work-box .img-box2 img {
-    width:auto;
-    height:auto;
-    max-width:100%;
-    max-height:100%;
+.img-box-aqa2 img, .img-box-deli2 img {
+    width:100%;
     box-shadow:0px 0px 16px 4px #d4d4d4;
 }
-.work-box2 {
+.work-box-nmb, .work-box-mens {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    display: block;    
+}
+.work-box-nmb .img-box, .work-box-mens .img-box{
+    width: 80%;
+    text-align: center;
+    margin: 6% auto 0;
+}
+.work-box-nmb .img-box img, .work-box-mens .img-box img {
+    width: 100%;
+    box-shadow: 0px 0px 16px 4px #d4d4d4;
+}
+.work-box-spmake {
     width: 90%;
     margin: 0 auto;
     position: relative;
     display: block;
     padding: 84% 0 0;
 }
-.work-box2 .img-box {
+.work-box-spmake .img-box {
     position: absolute;
     width: 50%;
     top: 10%;
     left: 0;
     z-index: 1
 }
-.work-box2 .img-box img {
-    width:auto;
-    height:auto;
-    max-width:100%;
-    max-height:100%;
-    box-shadow:0px 0px 16px 4px #d4d4d4;
+.work-box-spmake .img-box img {
+    width: 100%;
+    box-shadow:0px 0px 16px 4px #d4d4d4;    
 }
-.work-box2 .img-box2 {
+.work-box-spmake .img-box2 {
     position: absolute;
     width: 54%;
     top: 26%;
     left: 46%;
     z-index: 2;
 }
-.work-box2 .img-box2 img {
-    width:auto;
-    height:auto;
-    max-width:100%;
-    max-height:100%;
+.work-box-spmake .img-box2 img {
+    width: 100%;
     box-shadow:0px 0px 16px 4px #d4d4d4;
 }
-.work-box3 {
+.work-box-summake {
     width: 90%;
     margin: 0 auto;
     position: relative;
     display: block;
     padding: 70% 0 0;
 }
-.work-box3 .img-box {
+.work-box-summake .img-box {
+    position: absolute;
+    width: 68%;
+    top: 10%;
+    left: 0;
+    z-index: 1
+}
+.work-box-summake .img-box img {
+    width:100%;
+    box-shadow:0px 0px 16px 4px #d4d4d4;
+}
+.work-box-summake .img-box2 {
+    position: absolute;
+    width: 32%;
+    top: 40%;
+    right: 6%;
+    z-index: 2;
+}
+.work-box-summake .img-box2 img {
+    width: 100%;
+    box-shadow:0px 0px 16px 4px #d4d4d4;
+}
+.work-box-halloween {
+    width: 90%;
+    position: relative;
+    display: block;
+    padding: 70% 0 0;
+    margin: 0 auto;
+}
+.work-box-halloween .img-box {
+    position: absolute;
+    width: 68%;
+    top: 10%;
+    left: 0;
+    z-index: 1
+}
+.work-box-halloween .img-box img {
+    width:100%;
+    box-shadow:0px 0px 16px 4px #d4d4d4;
+}
+.work-box-halloween .img-box2 {
+    position: absolute;
+    width: 50%;
+    top: 46%;
+    right: 0%;
+    z-index: 2;
+}
+.work-box-halloween .img-box2 img {
+    width:100%;
+    box-shadow:0px 0px 16px 4px #d4d4d4;
+}
+.work-box-girl {
+    width: 90%;
+    position: relative;
+    display: block;
+    padding: 70% 0 0;
+    margin: 0 auto;
+}
+.work-box-girl .img-box {
     position: absolute;
     width: 70%;
     top: 10%;
     left: 0;
     z-index: 1
 }
-.work-box3 .img-box img {
-    width:auto;
-    height:auto;
-    max-width:100%;
-    max-height:100%;
+.work-box-girl .img-box img {
+    width:100%;
     box-shadow:0px 0px 16px 4px #d4d4d4;
 }
-.work-box3 .img-box2 {
+.work-box-girl .img-box2 {
     position: absolute;
-    width: 32%;
-    top: 40%;
-    left: 60%;
+    width: 50%;
+    top: 46%;
+    right: 0%;
     z-index: 2;
 }
-.work-box3 .img-box2 img {
+.work-box-girl .img-box2 img {
+    width:100%;
+    box-shadow:0px 0px 16px 4px #d4d4d4;
+}
+.work-box-summerdm, .work-box-autumn, .work-box-gri {
+    width: 90%;
+    position: relative;
+    display: block;
+    padding: 70% 0 0;
+    margin: 0 auto;
+}
+.work-box-summerdm .img-box, .work-box-autumn .img-box, .work-box-gri .img-box {
+    position: absolute;
+    width: 66%;
+    top: 10%;
+    left: 0;
+    z-index: 1
+}
+.work-box-summerdm .img-box img, .work-box-autumn .img-box img, .work-box-gri .img-box img {
+    width:100%;
+    box-shadow:0px 0px 16px 4px #d4d4d4;
+}
+.work-box-summerdm .img-box2, .work-box-autumn .img-box2, .work-box-gri .img-box2 {
+    position: absolute;
+    width: 50%;
+    top: 46%;
+    right: 0%;
+    z-index: 2;
+}
+.work-box-summerdm .img-box2 img, .work-box-autumn .img-box2 img, .work-box-gri .img-box2 img {
+    width:100%;
+    box-shadow:0px 0px 16px 4px #d4d4d4;
+}
+.work-box-sijou {
+    width: 90%;
+    position: relative;
+    display: block;
+    padding: 70% 0 0;
+    margin: 0 auto;
+}
+.img-box-sijou {
+    position: absolute;
+    width: 74%;
+    top: 10%;
+    left: 0;
+    z-index: 1
+}
+.img-box-sijou img {
     width:auto;
     height:auto;
     max-width:100%;
     max-height:100%;
     box-shadow:0px 0px 16px 4px #d4d4d4;
 }
-.work-box4 {
-    width: 90%;
-    margin: 0 auto;
-    position: relative;
-    display: block;    
+.img-box-sijou2 {
+    position: absolute;
+    width: 50%;
+    top: 40%;
+    right: 0;
+    z-index: 2;
 }
-.work-box4 .img-box {
-    width: 100%;
-    text-align: center;
-    margin: 6% auto 0;
+.img-box-sijou2 img {
+    width:auto;
+    height:auto;
+    max-width:100%;
+    max-height:100%;
+    box-shadow:0px 0px 16px 4px #d4d4d4;
 }
-.work-box4 img {
-    width: auto;
-    height: auto;
-    max-width: 100%;
-    max-height: 100%;
-    box-shadow: 0px 0px 16px 4px #d4d4d4;
-}
+
+
+
 
 .work-text {
     width: 90%;
@@ -187,18 +291,6 @@ work css
     font-size: 14px;
     color: #555;
 }
-
-/* .work-text span {
-    padding: 2px 10px;
-    display: inline-block;
-    width: 88px;
-    color: #658ee1;
-    border: 1px #658ee1 solid;
-    margin-right: 15px;
-    font-size: 12px;
-    text-align: center;
-} */
-
 
 /* web */
 .work-box-web {
@@ -253,7 +345,7 @@ work css
         margin: 0 auto;
         padding: 70% 0 0;
     }
-    .work-box, .work-box1, .work-box2, .work-box3, .work-box4, .work-box-web {
+    .work-box, .work-box-nmb, .work-box-mens, .work-box3, .work-box4, .work-box-web {
         width: 100%;
     }
     .fa-arrow-left {
