@@ -35,25 +35,60 @@ work css
     padding: 70% 0 0;
     margin: 0 auto;
 }
-.img-box-aqa, .img-box-deli {
+.box-shadow{
+    
+}
+.work-box-deli {
+    width: 90%;
+    position: relative;
+    display: block;
+    padding: 70% 0 0;
+    margin: 0 auto;
+}
+.work-box-deli .img-box {
     position: absolute;
     width: 70%;
     top: 10%;
     left: 0;
     z-index: 1
 }
-.img-box-aqa img, .img-box-deli img {
+.work-box-deli .img-box img {
     width:100%;
-    box-shadow:0px 0px 16px 4px #d4d4d4;
+    box-shadow:0px 0px 16px 4px #d4d4d4;   
 }
-.img-box-aqa2, .img-box-deli2 {
+.work-box-deli .img-box2 {
     position: absolute;
     width: 50%;
     top: 46%;
     right: 0%;
     z-index: 2;
 }
-.img-box-aqa2 img, .img-box-deli2 img {
+.work-box-deli .img-box2 img {
+    width:100%;
+    box-shadow:0px 0px 16px 4px #d4d4d4;
+}
+
+
+
+.img-box-aqa{
+    position: absolute;
+    width: 70%;
+    top: 10%;
+    left: 0;
+    z-index: 1
+}
+.img-box-aqa img {
+    width:100%;
+    box-shadow:0px 0px 16px 4px #d4d4d4;
+}
+.img-box-aqa2 {
+    position: absolute;
+    width: 50%;
+    top: 46%;
+    right: 0%;
+    z-index: 2;
+}
+.img-box-aqa2 img {
     width:100%;
     box-shadow:0px 0px 16px 4px #d4d4d4;
 }
@@ -204,7 +239,7 @@ work css
 }
 .work-box-summerdm .img-box img, .work-box-autumn .img-box img, .work-box-gri .img-box img {
     width:100%;
-    box-shadow:0px 0px 16px 4px #d4d4d4;
+
 }
 .work-box-summerdm .img-box2, .work-box-autumn .img-box2, .work-box-gri .img-box2 {
     position: absolute;
@@ -224,28 +259,28 @@ work css
     padding: 70% 0 0;
     margin: 0 auto;
 }
-.img-box-sijou {
+.work-box-sijou .img-box {
     position: absolute;
     width: 74%;
     top: 10%;
     left: 0;
     z-index: 1
 }
-.img-box-sijou img {
+.work-box-sijou .img-box img {
     width:auto;
     height:auto;
     max-width:100%;
     max-height:100%;
     box-shadow:0px 0px 16px 4px #d4d4d4;
 }
-.img-box-sijou2 {
+.work-box-sijou .img-box2 {
     position: absolute;
     width: 50%;
     top: 40%;
     right: 0;
     z-index: 2;
 }
-.img-box-sijou2 img {
+.work-box-sijou .img-box2 img {
     width:auto;
     height:auto;
     max-width:100%;
@@ -284,7 +319,7 @@ work css
     text-align: center;
 }
 .work-text .desc-text {
-    width: 60%;
+    width: 70%;
     word-wrap: break-word;
 }
 .work-text p {
@@ -347,6 +382,51 @@ work css
     }
     .work-box, .work-box-nmb, .work-box-mens, .work-box3, .work-box4, .work-box-web {
         width: 100%;
+    }
+    .work-box-halloween, .work-box-sijou, .work-box-spmake, .work-box-deli, .work-box-summake,
+    .work-box-girl, .work-box-summerdm, .work-box-autumn, .work-box-gri {
+        width: 90%;
+        position: relative;
+        display: block;
+        padding: 0% 0 0;
+        margin: 10% auto 0;
+    }
+    .work-box-halloween .img-box, .work-box-sijou .img-box, .work-box-spmake .img-box,
+    .work-box-deli .img-box, .work-box-summake .img-box, .work-box-girl .img-box,
+    .work-box-summerdm .img-box, .work-box-autumn .img-box, .work-box-gri .img-box {
+        position: relative;
+        width: 100%;
+        margin-bottom: 6%;
+    }
+    .work-box-halloween .img-box img, .work-box-sijou .img-box img, .work-box-spmake .img-box img,
+    .work-box-deli .img-box img, .work-box-summake .img-box img, .work-box-girl .img-box img,
+    .work-box-summerdm .img-box img, .work-box-autumn .img-box img, .work-box-gri .img-box img {
+        width:100%;
+        box-shadow: none;
+    }
+    .work-box-halloween .img-box2, .work-box-sijou .img-box2, .work-box-spmake .img-box2,
+    .work-box-deli .img-box2, .work-box-summake .img-box2, .work-box-girl .img-box2,
+    .work-box-summerdm .img-box2, .work-box-autumn .img-box2, .work-box-gri .img-box2 {
+        position: relative;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    .work-box-halloween .img-box2 img, .work-box-sijou .img-box2 img, .work-box-spmake .img-box2 img,
+    .work-box-deli .img-box2 img, .work-box-summake .img-box2 img, .work-box-girl .img-box2 img,
+    .work-box-summerdm .img-box2 img, .work-box-autumn .img-box2 img, .work-box-gri .img-box2 img {
+        width:100%;
+        box-shadow: none;
+    }
+    .work-box-nmb, .work-box-mens {
+        width: 90%;
+    }
+    .work-box-nmb .img-box, .work-box-mens .img-box{
+        width: 100%;
+    }
+    .work-box-nmb .img-box img, .work-box-mens .img-box img {
+        width: 100%;
+        box-shadow: none;
     }
     .fa-arrow-left {
         font-size: 4vw;
