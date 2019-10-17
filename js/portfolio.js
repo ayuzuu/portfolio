@@ -1,6 +1,7 @@
 $(function () {
     smoothScroll()
     moveText()
+    moveAos()
 })
 
 function smoothScroll() {
@@ -27,22 +28,31 @@ function smoothScroll() {
 
 
 function moveText() {
-    $('.movetext').each(function(){
+    $('.movetext').each(function () {
         //一文字ずつ<span>で括る
-        $(this).children().addBack().contents().each(function() {
+        $(this).children().addBack().contents().each(function () {
             if (this.nodeType == 3) {
-            $(this).replaceWith($(this).text().replace(/(\S)/g, '<span>$1</span>'));
+                $(this).replaceWith($(this).text().replace(/(\S)/g, '<span>$1</span>'));
             }
         });
-         
-    　　//inviewを使って画面に表れたら起動させる
-        $(this).on('inview',function(){
+
+        //inviewを使って画面に表れたら起動させる
+        $(this).on('inview', function () {
             //一文字ずつ順番に不透明させる
-            $(this).css({'opacity':1});
+            $(this).css({ 'opacity': 1 });
             for (var i = 0; i <= $(this).children('span').length; i++) {
-            $(this).children('span').eq(i).delay(100*i).animate({'opacity':1},800);
+                $(this).children('span').eq(i).delay(100 * i).animate({ 'opacity': 1 }, 800);
             };
         });
+    });
+}
+
+function moveAos() {
+    AOS.init({
+        delay: 100,
+        duration: 1000,
+        easing: 'easeOutExpo',
+        once: true,
     });
 }
 

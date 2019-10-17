@@ -67,31 +67,6 @@ work css
     width:100%;
     box-shadow:0px 0px 16px 4px #d4d4d4;
 }
-
-
-
-.img-box-aqa{
-    position: absolute;
-    width: 70%;
-    top: 10%;
-    left: 0;
-    z-index: 1
-}
-.img-box-aqa img {
-    width:100%;
-    box-shadow:0px 0px 16px 4px #d4d4d4;
-}
-.img-box-aqa2 {
-    position: absolute;
-    width: 50%;
-    top: 46%;
-    right: 0%;
-    z-index: 2;
-}
-.img-box-aqa2 img {
-    width:100%;
-    box-shadow:0px 0px 16px 4px #d4d4d4;
-}
 .work-box-nmb, .work-box-mens {
     width: 90%;
     margin: 0 auto;
@@ -223,32 +198,31 @@ work css
     width:100%;
     box-shadow:0px 0px 16px 4px #d4d4d4;
 }
-.work-box-summerdm, .work-box-autumn, .work-box-gri {
+.work-box-aqa, .work-box-summerdm, .work-box-autumn, .work-box-gri {
     width: 90%;
     position: relative;
     display: block;
     padding: 70% 0 0;
     margin: 0 auto;
 }
-.work-box-summerdm .img-box, .work-box-autumn .img-box, .work-box-gri .img-box {
+.work-box-aqa .img-box, .work-box-summerdm .img-box, .work-box-autumn .img-box, .work-box-gri .img-box {
     position: absolute;
     width: 66%;
     top: 10%;
     left: 0;
     z-index: 1
 }
-.work-box-summerdm .img-box img, .work-box-autumn .img-box img, .work-box-gri .img-box img {
+.work-box-aqa .img-box img, .work-box-summerdm .img-box img, .work-box-autumn .img-box img, .work-box-gri .img-box img {
     width:100%;
-
 }
-.work-box-summerdm .img-box2, .work-box-autumn .img-box2, .work-box-gri .img-box2 {
+.work-box-aqa .img-box2, .work-box-summerdm .img-box2, .work-box-autumn .img-box2, .work-box-gri .img-box2 {
     position: absolute;
     width: 50%;
     top: 46%;
     right: 0%;
     z-index: 2;
 }
-.work-box-summerdm .img-box2 img, .work-box-autumn .img-box2 img, .work-box-gri .img-box2 img {
+.work-box-aqa .img-box2 img, .work-box-summerdm .img-box2 img, .work-box-autumn .img-box2 img, .work-box-gri .img-box2 img {
     width:100%;
     box-shadow:0px 0px 16px 4px #d4d4d4;
 }
@@ -268,7 +242,6 @@ work css
 }
 .work-box-sijou .img-box img {
     width:auto;
-    height:auto;
     max-width:100%;
     max-height:100%;
     box-shadow:0px 0px 16px 4px #d4d4d4;
@@ -282,7 +255,6 @@ work css
 }
 .work-box-sijou .img-box2 img {
     width:auto;
-    height:auto;
     max-width:100%;
     max-height:100%;
     box-shadow:0px 0px 16px 4px #d4d4d4;
@@ -383,7 +355,7 @@ work css
     .work-box, .work-box-nmb, .work-box-mens, .work-box3, .work-box4, .work-box-web {
         width: 100%;
     }
-    .work-box-halloween, .work-box-sijou, .work-box-spmake, .work-box-deli, .work-box-summake,
+    .work-box-aqa, .work-box-halloween, .work-box-sijou, .work-box-spmake, .work-box-deli, .work-box-summake,
     .work-box-girl, .work-box-summerdm, .work-box-autumn, .work-box-gri {
         width: 90%;
         position: relative;
@@ -391,19 +363,21 @@ work css
         padding: 0% 0 0;
         margin: 10% auto 0;
     }
-    .work-box-halloween .img-box, .work-box-sijou .img-box, .work-box-spmake .img-box,
+    .work-box-aqa .img-box, .work-box-halloween .img-box, .work-box-sijou .img-box, .work-box-spmake .img-box,
     .work-box-deli .img-box, .work-box-summake .img-box, .work-box-girl .img-box,
     .work-box-summerdm .img-box, .work-box-autumn .img-box, .work-box-gri .img-box {
         position: relative;
         width: 100%;
         margin-bottom: 6%;
     }
+    .work-box-aqa .img-box img,
     .work-box-halloween .img-box img, .work-box-sijou .img-box img, .work-box-spmake .img-box img,
     .work-box-deli .img-box img, .work-box-summake .img-box img, .work-box-girl .img-box img,
     .work-box-summerdm .img-box img, .work-box-autumn .img-box img, .work-box-gri .img-box img {
         width:100%;
         box-shadow: none;
     }
+    .work-box-aqa .img-box2,
     .work-box-halloween .img-box2, .work-box-sijou .img-box2, .work-box-spmake .img-box2,
     .work-box-deli .img-box2, .work-box-summake .img-box2, .work-box-girl .img-box2,
     .work-box-summerdm .img-box2, .work-box-autumn .img-box2, .work-box-gri .img-box2 {
@@ -412,6 +386,7 @@ work css
         top: 0;
         left: 0;
     }
+    .work-box-aqa .img-box2 img,
     .work-box-halloween .img-box2 img, .work-box-sijou .img-box2 img, .work-box-spmake .img-box2 img,
     .work-box-deli .img-box2 img, .work-box-summake .img-box2 img, .work-box-girl .img-box2 img,
     .work-box-summerdm .img-box2 img, .work-box-autumn .img-box2 img, .work-box-gri .img-box2 img {
