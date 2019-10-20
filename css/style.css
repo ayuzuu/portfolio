@@ -120,7 +120,6 @@ header css
 #header ul li {
   margin-top: 1%;
   margin-bottom: 0.5%;
-  
 }
 #header ul li:first-child {
   margin-right: auto;
@@ -300,23 +299,38 @@ header css
 /* ======================================
 index css ここから
 ====================================== */
+.color-bl {
+  color: #658ee1;
+}
+.color-wh {
+  color: #ffffff;
+}
+.top-profile-area h2, .top-work-area h2, .top-illust-area h2 {
+  text-align: center;
+  font-size: 5vw;
+  margin-bottom: 4%;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  font-family: 'Montserrat', sans-serif;
+}
 .movetext {
   opacity:0;
 }
 .movetext span {
   opacity:0;
 }
-#mv-top {
+#mv-top .top-title {
   background-image: url(/images/common/bg-pc.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 90%;
+  height: 100vh;
 }
 #mv-top h1 {
   font-family: 'Damion', cursive;
   color: #fff;
   font-size: 13vw;
-  padding: 12vw 0 0;
+  padding: 10vw 0 0;
   margin: 0 auto;
   text-align: center;
 }
@@ -334,12 +348,8 @@ index css ここから
 .scroll-top {
   display: none;
 }
-@keyframes fuwafuwa {
-  0% { transform:translateY(0px); }
-  50% { transform:translateY(50px); }
-  100% { transform:translateY(  0px); }
-}
-.menu {
+
+/* .menu {
   text-align: center;
   width: 100%;
   margin: 0 auto;
@@ -370,12 +380,12 @@ index css ここから
 }
 .menu li a:hover{
   opacity: 0.5;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
-}
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+} */
 .back-link {
   width: 200px;
   position: relative;
@@ -396,6 +406,10 @@ index css ここから
   padding-bottom: 6px;
 }
 
+
+
+
+
 /* ======================================
 index css ここまで
 ====================================== */
@@ -404,7 +418,7 @@ index css ここまで
 /* ======================================
 profile css ここから
 ====================================== */
-#profile {
+/* #profile {
   width: 100%;
   margin: 0 auto;
   padding: 12% 0 0;
@@ -480,9 +494,279 @@ profile css ここから
     margin-top: 1%;
   }
 
+} */
+
+.top-profile-area {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10% 0 10%;
+}
+.top-profile-area .profile-text {
+  width: 100%;
+  margin: 0 auto;
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+  font-size: 12px;
+  text-align: justify;
+}
+.top-profile-area .profile-text span {
+  color: #658ee1;
+  font-size: 22px;
+  display: block;
+  padding: 10px 0 10px;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+.top-profile-area .skill-text {
+  width: 100%;
+  color: #658ee1;
+  font-size: 14px;
+  margin: 40px auto 0;
+}
+.top-profile-area .skill-text ul li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.top-profile-area .skill-text span {
+  padding: 4px 10px;
+  display: block;
+  width: 80px;
+  color: #658ee1;
+  border: 1px #658ee1 solid;
+  margin-right: 15px;
+  font-size: 12px;
+  text-align: center;
+}
+.top-profile-area .skill-text  p {
+  display: block;
+  width: 80%;
+  line-height: 1.4;
+}
+.top-profile-area .fa-arrow-left {
+  color: #658ee1;
+  font-size: 14px;
+} 
+
+@media screen and (max-width: 600px) {
+  .top-profile-area {
+    padding: 0;
+    margin: 30% auto 10%;
+  }
+  .top-profile-area h1 {
+    font-size: 14vw;
+  }
+  .top-profile-area .skill-text ul li {
+    align-items: flex-start;
+  }
+  .top-profile-area .skill-text span {
+    margin-top: 1%;
+  }
+
 }
 
 
+/* ======================================
+works css ここから
+====================================== */
+.top-work-area {
+  background: linear-gradient(-135deg, #56eee1, #558de0) fixed;
+  padding: 10% 0 10%;
+}
+.top-work-area .inner {
+  width: 80%;
+  margin: 0 auto 4%;
+}
+
+#top-work-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#top-work-list li {
+  width: calc(96% / 3);
+  margin-bottom: 2%;
+}
+#top-work-list .wrapper {
+	overflow:hidden;
+	position: relative !important;
+	cursor:pointer;
+}
+#top-work-list .wrapper a{
+	display: block;
+}
+.top-work-box {
+  overflow:hidden;
+}
+.top-work-box img {
+	width:100%;
+	position: relative;
+	top:0;
+  -webkit-transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:         all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);		
+}	
+.top-work-box .label {
+	position: absolute;
+	width: 100%;
+	height:50px;
+	bottom:-50px;
+-webkit-transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+transition:         all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.top-work-box .label-bg {
+	background: #517bdf;
+	opacity: 0.7;
+	width: 100%;
+	height:100%;
+	position: absolute;
+	top:0;
+	left:0;
+}
+.top-work-box .label-text {
+	color:#fff;
+	position: relative;
+	z-index:500;
+	padding:5px 8px;
+}
+.top-work-box .label-text p{
+	margin: 4px 0;
+	font-size: 14px;
+}
+.top-work-box .text-category {
+	display:block;
+	font-size:8px;
+}	
+.top-work-box:hover .label {
+	bottom:0;
+}
+.top-work-box:hover img {
+	opacity: 0.3;
+  	-webkit-transform: scale(1.15);
+  	transform: scale(1.15);
+  	cursor: pointer;
+  	filter: blur(1px);
+}  
+
+
+/* ======================================
+illust css ここから
+====================================== */
+.top-illust-area {
+  padding: 10% 0 10%;
+}
+.top-illust-area .inner {
+  width: 80%;
+  margin: 0 auto 4%;
+}
+#top-illust-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#top-illust-list li {
+  width: calc(96% / 4);
+  margin-bottom: 2%;
+}
+#top-illust-list .wrapper {
+	overflow:hidden;
+	position: relative !important;
+	cursor:pointer;
+}
+#top-illust-list .wrapper a{
+	display: block;
+}
+.top-illust-box {
+  overflow:hidden;
+}
+.top-illust-box img {
+	width:100%;
+	position: relative;
+	top:0;
+  -webkit-transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:         all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);		
+}	
+.top-illust-box .label {
+	position: absolute;
+	width: 100%;
+	height:50px;
+	bottom:-50px;
+-webkit-transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+transition:         all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.top-illust-box .label-bg {
+	background: #517bdf;
+	opacity: 0.7;
+	width: 100%;
+	height:100%;
+	position: absolute;
+	top:0;
+	left:0;
+}
+.top-illust-box .label-text {
+	color:#fff;
+	position: relative;
+	z-index:500;
+	padding:5px 8px;
+}
+.top-illust-box .label-text p{
+	margin: 4px 0;
+	font-size: 14px;
+}
+.top-illust-box .text-category {
+	display:block;
+	font-size:8px;
+}	
+.top-illust-box:hover .label {
+	bottom:0;
+}
+.top-illust-box:hover img {
+	opacity: 0.3;
+  	-webkit-transform: scale(1.15);
+  	transform: scale(1.15);
+  	cursor: pointer;
+  	filter: blur(1px);
+}  
+
+
+/* ======================================
+button css ここから
+====================================== */
+.btn {
+  width: 30%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1.8vw 6vw;
+  border: none;
+  font-size: 1.8vw;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  display: block;
+  letter-spacing: 1px;
+  font-weight: 700;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.btn-1 {
+  border: 2px solid #fff;
+  color: #fff;
+}
+.btn-1a:hover,
+.btn-1a:active {
+	color: #658ee1;
+  background: #fff;
+}
+.btn-2 {
+  border: 2px solid #658ee1;
+  color: #658ee1;
+}
+.btn-2a:hover,
+.btn-2a:active {
+	color: #fff;
+  background: #658ee1;
+}
 /* ======================================
 media screen ここから
 ====================================== */
