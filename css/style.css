@@ -350,9 +350,67 @@ index css ここから
 #mv-top #header {
   display: none;
 }
+
 .scroll-top {
-  display: none;
+  width: 30%;
+  margin: 10% auto 0;
+  display: block;
+  padding-top: 120px;
+  position: relative;
+  color: #5d82e0;
+  font-size: 12px;
+  overflow : hidden;
+  outline : none;
+  text-align: center;
 }
+.scroll-top span {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 2px solid #3b43ffc2;
+  border-bottom: 2px solid #3b43ffc2;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb 1.5s infinite;
+  animation: sdb 1.5s infinite;
+  box-sizing: border-box;
+}
+.scroll-top span:active{
+  color : none;
+}
+  @-webkit-keyframes sdb {
+    0% {
+      -webkit-transform: rotate(-45deg) translate(0, 0);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+      opacity: 0;
+    }
+  }
+  @keyframes sdb {
+    0% {
+      transform: rotate(-45deg) translate(0, 0);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(-45deg) translate(-20px, 20px);
+      opacity: 0;
+    }
+  }
+
+
+
+
 
 /* .menu {
   text-align: center;
@@ -761,7 +819,7 @@ button css ここから
   transition: all 0.3s;
 }
 .btn-1 {
-  border: 2px solid #fff;
+  border: 1px solid #fff;
   color: #fff;
 }
 .btn-1a:hover,
@@ -770,7 +828,7 @@ button css ここから
   background: #fff;
 }
 .btn-2 {
-  border: 2px solid #658ee1;
+  border: 1px solid #658ee1;
   color: #658ee1;
 }
 .btn-2a:hover,
