@@ -961,15 +961,6 @@ media screen ここから
     .fa-user-circle:before, .fa-desktop:before, .fa-palette:before  {
     font-size: 5.6vw;
     }
-    .back-link a{
-      position: absolute;
-      top: -70px;
-      left: 0;
-      margin: 6% 0 0 4%;
-      z-index: 1111;
-      color: #789ce4;
-      padding: 6% 8%;
-    }
 }
 
 
