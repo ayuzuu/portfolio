@@ -330,7 +330,8 @@ index css ここから
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 90%;
-  height: 100vh;
+  padding: 0 0 10%;
+  margin-bottom: 10%;
 }
 #mv-top h1 {
   font-family: 'Damion', cursive;
@@ -878,7 +879,7 @@ media screen ここから
   font-size: 6vw;
 }
 #logo {
-  padding: 40vw 0 0;
+  padding: 50% 0 70%;
   position: relative;
   background-image: url(/images/common/bg.png);
   background-size: cover;
@@ -888,12 +889,16 @@ media screen ここから
   margin: 12% auto 0;
   display: block;
   padding-top: 120px;
-  position: relative;
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  right: 0;
   color: #5d82e0;
   font-size: 4vw;
   overflow : hidden;
   outline : none;
   text-align: center;
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
 }
 .scroll-top span {
   position: absolute;
