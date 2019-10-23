@@ -5,7 +5,7 @@ $(function () {
 })
 
 function smoothScroll() {
-    $('a[href^="#menu-top"]').on('click', function () {
+    $('a[href^="#profile"]').on('click', function () {
         // scroll speed
         var speed = 400;
         // get anchor-tag value
