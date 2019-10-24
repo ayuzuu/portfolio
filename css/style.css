@@ -86,9 +86,9 @@ header css
 ====================================== */
 #header {
   width: 100%;
-  background: -moz-linear-gradient(65deg, #517bdf, #b09fea); 
-  background: -webkit-linear-gradient(65deg, #517bdf, #b09fea); 
-  background: linear-gradient(25deg, #517bdf, #b09fea); 
+  background: -moz-linear-gradient(-135deg, #56eee1, #558de0); 
+  background: -webkit-linear-gradient(-135deg, #56eee1, #558de0); 
+  background: linear-gradient(-135deg, #56eee1, #558de0); 
   padding: 1vw 0 1vw;
   list-style: none;
   margin-bottom: 50px;
@@ -143,13 +143,13 @@ header css
   font-family: 'Montserrat', sans-serif;
 }
 #header ul li a:hover {
-  color: #dbd1ff;
+  color: #3c7ec7;
   opacity: 0.6;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
 #header ul li a.active {
-  color: #dbd1ff;
+  color: #4d729c94;
 }
 #header ul span {
   color: #fff;
@@ -173,9 +173,9 @@ header css
   }
   #header nav {
     height: 9vh;
-    background: -moz-linear-gradient(65deg, #517bdf, #b09fea);
-    background: -webkit-linear-gradient(65deg, #517bdf, #b09fea);
-    background: linear-gradient(25deg, #517bdf, #b09fea);
+    background: -moz-linear-gradient(-135deg, #56eee1, #558de0);
+    background: -webkit-linear-gradient(-135deg, #56eee1, #558de0);
+    background: linear-gradient(-135deg, #56eee1, #558de0);
   }
   #header h1 {
     margin: 0 0 0 20px;
@@ -283,24 +283,11 @@ header css
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ======================================
 index css ここから
 ====================================== */
 .color-bl {
-  color: #658ee1;
+  color: #558de0;
 }
 .color-wh {
   color: #ffffff;
@@ -410,47 +397,6 @@ index css ここから
     }
   }
 
-
-
-
-
-/* .menu {
-  text-align: center;
-  width: 100%;
-  margin: 0 auto;
-}
-.menu ul {
-  display: flex;
-  justify-content: center;
-  margin: 70px 0 130px;
-}
-.menu li {
-  width: 180px;
-  font-size: 26px;
-  font-family: 'Montserrat', sans-serif;
-  color: #555;
-  padding: 0 20px;
-  letter-spacing: 0.1em;
-}
-.menu li a{
-  color: #658ee1;
-  font-weight: bold;
-  letter-spacing: 0.1em;
-}
-.menu li span{
-  color: #648ee1;
-  font-size: 10px;
-  display: block;
-  padding: 4px 0 0 30px;
-}
-.menu li a:hover{
-  opacity: 0.5;
-  -webkit-transition: all .3s ease;
-  -moz-transition: all .3s ease;
-  -ms-transition: all .3s ease;
-  -o-transition: all .3s ease;
-  transition: all .3s ease;
-} */
 .back-link {
   width: 200px;
   position: relative;
@@ -471,10 +417,6 @@ index css ここから
   padding-bottom: 6px;
 }
 
-
-
-
-
 /* ======================================
 index css ここまで
 ====================================== */
@@ -483,83 +425,6 @@ index css ここまで
 /* ======================================
 profile css ここから
 ====================================== */
-/* #profile {
-  width: 100%;
-  margin: 0 auto;
-  padding: 12% 0 0;
-}
-#profile h1{
-  text-align: center;
-  color: #658ee1;
-  font-size: 6vw;
-  margin-bottom: 2vw;
-  font-weight: 700;
-  letter-spacing: 0.01em;
-  font-family: 'Montserrat', sans-serif;
-}
-.profile-text {
-  margin: 0 auto;
-  letter-spacing: 0.05em;
-  line-height: 1.5;
-  font-size: 12px;
-  width: 90%;
-  text-align: justify;
-}
-.profile-text span {
-  color: #658ee1;
-  font-size: 22px;
-  display: block;
-  padding: 10px 0 10px;
-  text-align: center;
-  letter-spacing: 0.1em;
-}
-.skill-text {
-  width: 90%;
-  color: #658ee1;
-  font-size: 14px;
-  margin: 40px auto 0;
-}
-.skill-text ul li {
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-}
-.skill-text span {
-  padding: 4px 10px;
-  display: block;
-  width: 80px;
-  color: #658ee1;
-  border: 1px #658ee1 solid;
-  margin-right: 15px;
-  font-size: 12px;
-  text-align: center;
-}
-.skill-text  p {
-  display: block;
-  width: 80%;
-  line-height: 1.4;
-}
-.fa-arrow-left {
-  color: #658ee1;
-  font-size: 14px;
-} 
-
-@media screen and (max-width: 767px) {
-  #profile {
-    padding: 0;
-    margin: 28% 0 0;
-  }
-  #profile h1 {
-    font-size: 14vw;
-  }
-  .skill-text ul li {
-    align-items: flex-start;
-  }
-  .skill-text span {
-    margin-top: 1%;
-  }
-
-} */
 
 .top-profile-area {
   width: 80%;
@@ -575,7 +440,7 @@ profile css ここから
   text-align: justify;
 }
 .top-profile-area .profile-text span {
-  color: #658ee1;
+  color: #558de0;
   font-size: 22px;
   display: block;
   padding: 10px 0 10px;
@@ -584,7 +449,7 @@ profile css ここから
 }
 .top-profile-area .skill-text {
   width: 100%;
-  color: #658ee1;
+  color: #558de0;
   font-size: 14px;
   margin: 40px auto 0;
 }
@@ -597,8 +462,8 @@ profile css ここから
   padding: 4px 10px;
   display: block;
   width: 80px;
-  color: #658ee1;
-  border: 1px #658ee1 solid;
+  color: #558de0;
+  border: 1px #558de0 solid;
   margin-right: 15px;
   font-size: 12px;
   text-align: center;
@@ -609,11 +474,15 @@ profile css ここから
   line-height: 1.4;
 }
 .top-profile-area .fa-arrow-left {
-  color: #658ee1;
+  color: #558de0;
   font-size: 14px;
 } 
 
 @media screen and (max-width: 767px) {
+  #profile {
+    margin-top : -50px;
+  padding-top : 50px;
+  }
   .top-profile-area {
     width: 90%;
     padding: 0;
@@ -838,17 +707,17 @@ button css ここから
 }
 .btn-1a:hover,
 .btn-1a:active {
-	color: #658ee1;
+	color: #558de0;
   background: #fff;
 }
 .btn-2 {
-  border: 1px solid #658ee1;
-  color: #658ee1;
+  border: 1px solid #558de0;
+  color: #558de0;
 }
 .btn-2a:hover,
 .btn-2a:active {
 	color: #fff;
-  background: #658ee1;
+  background: #558de0;
 }
 
 @media screen and (max-width: 767px) {
@@ -907,8 +776,8 @@ media screen ここから
   width: 24px;
   height: 24px;
   margin-left: -12px;
-  border-left: 3px solid #3b43ffc2;
-  border-bottom: 3px solid #3b43ffc2;
+  border-left: 1px solid #3b43ffc2;
+  border-bottom: 1px solid #3b43ffc2;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   -webkit-animation: sdb 1.5s infinite;
