@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Damion&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap');
 
+
 /* ======================================
 reset css
 ====================================== */
@@ -11,84 +12,83 @@ reset css
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
   vertical-align: baseline;
   box-sizing: border-box;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
 }
+
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
+
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
+
 a {
   text-decoration: none;
-  }
+}
 
 /* ======================================
 body footer css
 ====================================== */
+
 html {
   width: 100%;
 }
+
 body {
   width: 100%;
   margin: 0 auto;
   font-family: 'Noto Sans', sans-serif;
   line-height: 1;
 }
+
 footer {
   text-align: center;
   margin: 100px auto 20px;
   font-size: 10px;
   color: #555;
 }
+
 @media screen and (max-width: 767px) {
   body {
     /* background: linear-gradient( #bfc1ff, #b4f7f8); */
-    
   }
 }
 
 /* ======================================
 header css
 ====================================== */
+#header-sp {
+  display: none;
+}
 #header {
   width: 100%;
-  background: -moz-linear-gradient(-135deg, #56eee1, #558de0); 
-  background: -webkit-linear-gradient(-135deg, #56eee1, #558de0); 
-  background: linear-gradient(-135deg, #56eee1, #558de0); 
+  background: -moz-linear-gradient(-135deg, #56eee1, #558de0);
+  background: -webkit-linear-gradient(-135deg, #56eee1, #558de0);
+  background: linear-gradient(-135deg, #56eee1, #558de0);
   padding: 1vw 0 1vw;
   list-style: none;
   margin-bottom: 50px;
@@ -115,7 +115,7 @@ header css
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  background:transparent;
+  background: transparent;
 }
 #header ul li {
   margin-top: 1%;
@@ -161,17 +161,18 @@ header css
 }
 
 @media screen and (max-width: 767px) {
-  #header  {
-    position: fixed;
+  #header {
+    /* position: fixed;
     box-sizing: border-box;
     width: 100%;
     top: 0;
     right: 0;
     z-index: 100;
     padding: 0;
-    background:none;
+    background:none; */
+    display: none;
   }
-  #header nav {
+  /* #header nav {
     height: 9vh;
     background: -moz-linear-gradient(-135deg, #56eee1, #558de0);
     background: -webkit-linear-gradient(-135deg, #56eee1, #558de0);
@@ -276,22 +277,159 @@ header css
     z-index: 999;
     position: absolute;
     right: 0;
-  }
+  }*/
 }
 
+/* ======================================
+sp ハンバーガー css ここから
+====================================== */
 
-
+@media screen and (max-width: 767px) {
+  #header-sp {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    font-family: 'Montserrat', sans-serif;
+    background: -moz-linear-gradient(-135deg, #56eee1, #558de0);
+    background: -webkit-linear-gradient(-135deg, #56eee1, #558de0);
+    background: linear-gradient(-135deg, #56eee1, #558de0);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .16);
+    z-index: 999;
+  }
+  .global-nav {
+    position: fixed;
+    right: -320px;
+    /* これで隠れる */
+    top: 0;
+    width: 300px;
+    /* スマホに収まるくらい */
+    height: 100vh;
+    padding-top: 40px;
+    background: -moz-linear-gradient(-135deg, #56eee1, #558de0);
+    background: -webkit-linear-gradient(-135deg, #56eee1, #558de0);
+    background: linear-gradient(-135deg, #56eee1, #558de0);
+    transition: all .6s;
+    z-index: 200;
+    overflow-y: auto;
+    /* メニューが多くなったらスクロールできるように */
+  }
+  .hamburger {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    /* クリックしやすいようにちゃんと幅を指定する */
+    height: 50px;
+    /* クリックしやすいようにちゃんと高さを指定する */
+    cursor: pointer;
+    z-index: 300;
+  }
+  .global-nav__list {
+    margin: 0;
+    padding: 20% 0;
+    list-style: none;
+  }
+  .global-nav__item {
+    text-align: center;
+    padding: 0 14px;
+    text-align: center;
+    padding: 0 14px;
+    font-weight: bold;
+    font-size: 7vw;
+    letter-spacing: 0.05em;
+    margin-bottom: 5%;
+  }
+  .global-nav__item:nth-child(1) {
+    font-size: 13vw;
+    letter-spacing: 0.06em;
+    font-family: 'Damion', cursive;
+    margin: 0 auto 8%;
+    font-weight: 100;
+  }
+  .global-nav__item span {
+    color: #fff;
+    font-size: 3vw;
+    display: block;
+    text-align: center;
+    letter-spacing: 0.2em;
+  }
+  .global-nav__item a {
+    display: block;
+    padding: 8px 0;
+    text-decoration: none;
+    color: #fff;
+  }
+  .global-nav__item a:hover {
+    opacity: 0.5;
+  }
+  .hamburger__line {
+    position: absolute;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background-color: #fff;
+    transition: all .6s;
+  }
+  .hamburger__line--1 {
+    top: 16px;
+  }
+  .hamburger__line--2 {
+    top: 24px;
+  }
+  .hamburger__line--3 {
+    top: 32px;
+  }
+  .black-bg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background-color: #000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .6s;
+    cursor: pointer;
+  }
+  /* 表示された時用のCSS */
+  .nav-open .global-nav {
+    right: 0;
+  }
+  .nav-open .black-bg {
+    opacity: .8;
+    visibility: visible;
+  }
+  .nav-open .hamburger__line--1 {
+    transform: rotate(45deg);
+    top: 20px;
+  }
+  .nav-open .hamburger__line--2 {
+    width: 0;
+    left: 50%;
+  }
+  .nav-open .hamburger__line--3 {
+    transform: rotate(-45deg);
+    top: 20px;
+  }
+}
 
 
 /* ======================================
 index css ここから
 ====================================== */
+
 .color-bl {
   color: #558de0;
 }
+
 .color-wh {
   color: #ffffff;
 }
+
 .top-profile-area h2, .top-work-area h2, .top-illust-area h2 {
   text-align: center;
   font-size: 5vw;
@@ -300,6 +438,7 @@ index css ここから
   letter-spacing: 0.01em;
   font-family: 'Montserrat', sans-serif;
 }
+
 @media screen and (max-width: 767px) {
   .top-profile-area h2, .top-work-area h2, .top-illust-area h2 {
     font-size: 10vw;
@@ -307,27 +446,31 @@ index css ここから
 }
 
 .movetext {
-  opacity:0;
+  opacity: 0;
 }
+
 .movetext span {
-  opacity:0;
+  opacity: 0;
 }
+
 #mv-top .top-title {
   background-image: url(/images/common/bg-pc.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 90%;
-  padding: 0 0 10%;
+  padding-top: 10%;
+  padding-bottom: 4%;
   margin-bottom: 10%;
 }
+
 #mv-top h1 {
   font-family: 'Damion', cursive;
   color: #fff;
   font-size: 13vw;
-  padding: 10vw 0 0;
   margin: 0 auto;
   text-align: center;
 }
+
 #mv-top .name {
   font-family: 'Damion', cursive;
   color: #fff;
@@ -336,6 +479,7 @@ index css ここから
   text-align: center;
   letter-spacing: 0.05em;
 }
+
 #mv-top #header {
   display: none;
 }
@@ -346,12 +490,13 @@ index css ここから
   display: block;
   padding-top: 120px;
   position: relative;
-  color: #5d82e0;
+  color: #fff;
   font-size: 12px;
-  overflow : hidden;
-  outline : none;
+  overflow: hidden;
+  outline: none;
   text-align: center;
 }
+
 .scroll-top span {
   position: absolute;
   top: 40%;
@@ -359,57 +504,62 @@ index css ここから
   width: 24px;
   height: 24px;
   margin-left: -12px;
-  border-left: 2px solid #3b43ffc2;
-  border-bottom: 2px solid #3b43ffc2;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   -webkit-animation: sdb 1.5s infinite;
   animation: sdb 1.5s infinite;
   box-sizing: border-box;
 }
-.scroll-top span:active{
-  color : none;
+
+.scroll-top span:active {
+  color: none;
 }
-  @-webkit-keyframes sdb {
-    0% {
-      -webkit-transform: rotate(-45deg) translate(0, 0);
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      -webkit-transform: rotate(-45deg) translate(-20px, 20px);
-      opacity: 0;
-    }
+
+@-webkit-keyframes sdb {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
   }
-  @keyframes sdb {
-    0% {
-      transform: rotate(-45deg) translate(0, 0);
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      transform: rotate(-45deg) translate(-20px, 20px);
-      opacity: 0;
-    }
+  50% {
+    opacity: 1;
   }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+
+@keyframes sdb {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
 
 .back-link {
   width: 200px;
   position: relative;
 }
-.back-link a{
+
+.back-link a {
   position: absolute;
   top: -30px;
   left: 18%;
   margin: 16% 0 0 0;
-  z-index: 1111;
+  z-index: 500;
   color: #789ce4;
   padding: 6% 8%;
 }
+
 .fa-user-circle:before, .fa-desktop:before, .fa-palette:before {
   margin-right: 6px;
   font-size: 22px;
@@ -421,7 +571,6 @@ index css ここから
 index css ここまで
 ====================================== */
 
-
 /* ======================================
 profile css ここから
 ====================================== */
@@ -431,6 +580,7 @@ profile css ここから
   margin: 0 auto;
   padding: 10% 0 10%;
 }
+
 .top-profile-area .profile-text {
   width: 100%;
   margin: 0 auto;
@@ -439,6 +589,7 @@ profile css ここから
   font-size: 12px;
   text-align: justify;
 }
+
 .top-profile-area .profile-text span {
   color: #558de0;
   font-size: 22px;
@@ -447,17 +598,20 @@ profile css ここから
   text-align: center;
   letter-spacing: 0.1em;
 }
+
 .top-profile-area .skill-text {
   width: 100%;
   color: #558de0;
   font-size: 14px;
   margin: 40px auto 0;
 }
+
 .top-profile-area .skill-text ul li {
   margin-bottom: 10px;
   display: flex;
   align-items: center;
 }
+
 .top-profile-area .skill-text span {
   padding: 4px 10px;
   display: block;
@@ -468,20 +622,22 @@ profile css ここから
   font-size: 12px;
   text-align: center;
 }
-.top-profile-area .skill-text  p {
+
+.top-profile-area .skill-text p {
   display: block;
   width: 80%;
   line-height: 1.4;
 }
+
 .top-profile-area .fa-arrow-left {
   color: #558de0;
   font-size: 14px;
-} 
+}
 
 @media screen and (max-width: 767px) {
   #profile {
-    margin-top : -50px;
-  padding-top : 50px;
+    margin-top: -90px;
+    padding-top: 90px;
   }
   .top-profile-area {
     width: 90%;
@@ -493,14 +649,15 @@ profile css ここから
   }
 }
 
-
 /* ======================================
 works css ここから
 ====================================== */
+
 .top-work-area {
   background: linear-gradient(-135deg, #56eee1, #558de0) fixed;
   padding: 10% 0 10%;
 }
+
 .top-work-area .inner {
   width: 80%;
   margin: 0 auto 4%;
@@ -511,65 +668,77 @@ works css ここから
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 #top-work-list li {
   width: calc(96% / 3);
   margin-bottom: 2%;
 }
+
 #top-work-list .wrapper {
-	overflow:hidden;
-	position: relative !important;
-	cursor:pointer;
+  overflow: hidden;
+  position: relative !important;
+  cursor: pointer;
 }
-#top-work-list .wrapper a{
-	display: block;
+
+#top-work-list .wrapper a {
+  display: block;
 }
+
 .top-work-box {
-  overflow:hidden;
+  overflow: hidden;
 }
+
 .top-work-box img {
-	width:100%;
-	position: relative;
-	top:0;
+  width: 100%;
+  position: relative;
+  top: 0;
   -webkit-transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition:         all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);		
-}	
+  transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
 .top-work-box .label {
-	position: absolute;
-	width: 100%;
-	height:50px;
-	bottom:-50px;
--webkit-transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
-transition:         all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  bottom: -50px;
+  -webkit-transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
 }
+
 .top-work-box .label-bg {
-	background: #517bdf;
-	opacity: 0.7;
-	width: 100%;
-	height:100%;
-	position: absolute;
-	top:0;
-	left:0;
+  background: #517bdf;
+  opacity: 0.7;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
+
 .top-work-box .label-text {
-	color:#fff;
-	position: relative;
-	z-index:500;
-	padding:5px 8px;
+  color: #fff;
+  position: relative;
+  z-index: 500;
+  padding: 5px 8px;
 }
-.top-work-box .label-text p{
-	margin: 4px 0;
-	font-size: 12px;
+
+.top-work-box .label-text p {
+  margin: 4px 0;
+  font-size: 12px;
 }
+
 .top-work-box .text-category {
-	display:block;
-  font-size:7px;
+  display: block;
+  font-size: 7px;
   text-align: 1.2;
-}	
-.top-work-box:hover .label {
-	bottom:0;
 }
+
+.top-work-box:hover .label {
+  bottom: 0;
+}
+
 .top-work-box:hover img {
-	opacity: 0.3;
+  opacity: 0.3;
   -webkit-transform: scale(1.15);
   transform: scale(1.15);
   cursor: pointer;
@@ -577,7 +746,7 @@ transition:         all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 @media screen and (max-width: 767px) {
-  .top-work-area .inner{
+  .top-work-area .inner {
     width: 90%;
   }
   #top-work-list li {
@@ -586,88 +755,102 @@ transition:         all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
   }
 }
 
-
 /* ======================================
 illust css ここから
 ====================================== */
+
 .top-illust-area {
   padding: 10% 0 10%;
 }
+
 .top-illust-area .inner {
   width: 80%;
   margin: 0 auto 4%;
 }
+
 #top-illust-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 #top-illust-list li {
   width: calc(96% / 4);
   margin-bottom: 2%;
 }
+
 #top-illust-list .wrapper {
-	overflow:hidden;
-	position: relative !important;
-	cursor:pointer;
+  overflow: hidden;
+  position: relative !important;
+  cursor: pointer;
 }
-#top-illust-list .wrapper a{
-	display: block;
+
+#top-illust-list .wrapper a {
+  display: block;
 }
+
 .top-illust-box {
-  overflow:hidden;
+  overflow: hidden;
 }
+
 .top-illust-box img {
-	width:100%;
-	position: relative;
-	top:0;
+  width: 100%;
+  position: relative;
+  top: 0;
   -webkit-transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition:         all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);		
-}	
+  transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
 .top-illust-box .label {
-	position: absolute;
-	width: 100%;
-	height:50px;
-	bottom:-50px;
--webkit-transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
-transition:         all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  bottom: -50px;
+  -webkit-transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
 }
+
 .top-illust-box .label-bg {
-	background: #517bdf;
-	opacity: 0.7;
-	width: 100%;
-	height:100%;
-	position: absolute;
-	top:0;
-	left:0;
+  background: #517bdf;
+  opacity: 0.7;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
+
 .top-illust-box .label-text {
-	color:#fff;
-	position: relative;
-	z-index:500;
-	padding:5px 8px;
+  color: #fff;
+  position: relative;
+  z-index: 500;
+  padding: 5px 8px;
 }
-.top-illust-box .label-text p{
-	margin: 4px 0;
-	font-size: 14px;
+
+.top-illust-box .label-text p {
+  margin: 4px 0;
+  font-size: 14px;
 }
+
 .top-illust-box .text-category {
-	display:block;
-	font-size:8px;
-}	
-.top-illust-box:hover .label {
-	bottom:0;
+  display: block;
+  font-size: 8px;
 }
+
+.top-illust-box:hover .label {
+  bottom: 0;
+}
+
 .top-illust-box:hover img {
-	opacity: 0.3;
-  	-webkit-transform: scale(1.15);
-  	transform: scale(1.15);
-  	cursor: pointer;
-  	filter: blur(1px);
+  opacity: 0.3;
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
+  cursor: pointer;
+  filter: blur(1px);
 }
 
 @media screen and (max-width: 767px) {
-  .top-illust-area .inner{
+  .top-illust-area .inner {
     width: 90%;
   }
   #top-illust-list li {
@@ -679,10 +862,10 @@ transition:         all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
   }
 }
 
-
 /* ======================================
 button css ここから
 ====================================== */
+
 .btn {
   width: 30%;
   text-align: center;
@@ -700,23 +883,26 @@ button css ここから
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
+  font-family: 'Montserrat', sans-serif;
 }
+
 .btn-1 {
   border: 1px solid #fff;
   color: #fff;
 }
-.btn-1a:hover,
-.btn-1a:active {
-	color: #558de0;
+
+.btn-1a:hover, .btn-1a:active {
+  color: #558de0;
   background: #fff;
 }
+
 .btn-2 {
   border: 1px solid #558de0;
   color: #558de0;
 }
-.btn-2a:hover,
-.btn-2a:active {
-	color: #fff;
+
+.btn-2a:hover, .btn-2a:active {
+  color: #fff;
   background: #558de0;
 }
 
@@ -731,62 +917,63 @@ button css ここから
 /* ======================================
 media screen ここから
 ====================================== */
+
 @media screen and (max-width: 767px) {
-#mv-top .top-title {
-  background-image: url(/images/common/bg-sp.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0 90%;
-  height: 100vh;
-}
-#mv-top h1 {
-  font-size: 24vw;
-  padding: 10vw 0 2vw;
-}
-#mv-top .name {
-  color: #fff;
-  font-size: 6vw;
-}
-#logo {
-  padding: 50% 0 70%;
-  position: relative;
-  background-image: url(/images/common/bg.png);
-  background-size: cover;
-}
-.scroll-top {
-  width: 30%;
-  margin: 12% auto 0;
-  display: block;
-  padding-top: 120px;
-  position: absolute;
-  bottom: 10%;
-  left: 0;
-  right: 0;
-  color: #5d82e0;
-  font-size: 4vw;
-  overflow : hidden;
-  outline : none;
-  text-align: center;
-  -webkit-tap-highlight-color:rgba(0,0,0,0);
-}
-.scroll-top span {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  width: 24px;
-  height: 24px;
-  margin-left: -12px;
-  border-left: 1px solid #3b43ffc2;
-  border-bottom: 1px solid #3b43ffc2;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  -webkit-animation: sdb 1.5s infinite;
-  animation: sdb 1.5s infinite;
-  box-sizing: border-box;
-}
-.scroll-top span:active{
-  color : none;
-}
+  #mv-top .top-title {
+    background-image: url(/images/common/bg-sp.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 90%;
+    height: 100vh;
+  }
+  #mv-top h1 {
+    font-size: 24vw;
+    padding: 10vw 0 2vw;
+  }
+  #mv-top .name {
+    color: #fff;
+    font-size: 6vw;
+  }
+  #logo {
+    padding: 50% 0 70%;
+    position: relative;
+    background-image: url(/images/common/bg.png);
+    background-size: cover;
+  }
+  .scroll-top {
+    width: 30%;
+    margin: 12% auto 0;
+    display: block;
+    padding-top: 120px;
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+    color: #5d82e0;
+    font-size: 4vw;
+    overflow: hidden;
+    outline: none;
+    text-align: center;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  .scroll-top span {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid #3b43ffc2;
+    border-bottom: 1px solid #3b43ffc2;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: sdb 1.5s infinite;
+    animation: sdb 1.5s infinite;
+    box-sizing: border-box;
+  }
+  .scroll-top span:active {
+    color: none;
+  }
   @-webkit-keyframes sdb {
     0% {
       -webkit-transform: rotate(-45deg) translate(0, 0);
@@ -813,31 +1000,26 @@ media screen ここから
       opacity: 0;
     }
   }
-    .title-svg{
-    width: 90%; 
+  .title-svg {
+    width: 90%;
     display: block;
-    }
-    .menu ul{
-    width: 100%; 
+  }
+  .menu ul {
+    width: 100%;
     display: block;
     margin: 70vw 0 50vw;
     position: relative;
-    }
-    .menu li{
-    width: 50%; 
+  }
+  .menu li {
+    width: 50%;
     font-size: 7vw;
     margin: 10% auto 0;
     padding-left: 4%;
-    }
-    .menu li span  {
+  }
+  .menu li span {
     padding-left: 4%;
-    }
-    .fa-user-circle:before, .fa-desktop:before, .fa-palette:before  {
+  }
+  .fa-user-circle:before, .fa-desktop:before, .fa-palette:before {
     font-size: 5.6vw;
-    }
+  }
 }
-
-
-
-
-
