@@ -14,10 +14,28 @@
 			<span></span>
 		</div>
 	</nav>
-	<!--/Nav-->
+</header>
+<header id="header-sp">
+	<nav class="global-nav">
+		<ul class="global-nav__list">
+			<li class="global-nav__item"><a href="/index.html">Portfolio.</a></li>
+			<li class="global-nav__item"><a href="/#profile">Profile</a><span>自己紹介</span></li>
+			<li class="global-nav__item"><a href="/works/">Works</a><span>制作実績</span></li>
+			<li class="global-nav__item"><a href="/illust.html">Illust</a><span>イラスト</span></li>
+		</ul>
+	</nav>
+	<div class="hamburger" id="js-hamburger">
+		<span class="hamburger__line hamburger__line--1"></span>
+		<span class="hamburger__line hamburger__line--2"></span>
+		<span class="hamburger__line hamburger__line--3"></span>
+	</div>
+	<div class="black-bg" id="js-black-bg"></div>
 </header>
 
-<script>
+
+
+
+<!-- <script>
 	$('.nav__icon').on('click', function () {
 		$(this).toggleClass('active');
 		$('nav ul').slideToggle();
@@ -33,9 +51,10 @@
 			$('nav ul').css({ display: 'none', height: '100vh' });
 		}
 	});
-</script>
+</script> -->
 <script type="text/javascript">
 	$(function () {
+		// ここからpcヘッダー
 		$('#header li a').each(function () {
 			var $href = $(this).attr('href');
 			console.log(location.href)
@@ -46,7 +65,25 @@
 				$(this).removeClass('active');
 			}
 		});
+		// ここまでpcヘッダー
+		
+		// ここからspハンバーガー
+		toggleNav();
 	});
+
+	function toggleNav() {
+		var body = document.body;
+		var hamburger = document.getElementById('js-hamburger');
+		var blackBg = document.getElementById('js-black-bg');
+
+		hamburger.addEventListener('click', function () {
+			body.classList.toggle('nav-open');
+		});
+		blackBg.addEventListener('click', function () {
+			body.classList.remove('nav-open');
+		});
+		// ここまでspハンバーガー
+	}
 </script>
 
 <!--/Header-->
