@@ -85,6 +85,9 @@ header css
   display: none;
 }
 #header {
+  display: block;
+  position: fixed;
+  top: 0;
   width: 100%;
   background: -moz-linear-gradient(-135deg, #56eee1, #558de0);
   background: -webkit-linear-gradient(-135deg, #56eee1, #558de0);
@@ -94,6 +97,7 @@ header css
   margin-bottom: 50px;
   position: fixed;
   z-index: 10;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .16);
 }
 #header img {
   width: 100%;
@@ -162,122 +166,9 @@ header css
 
 @media screen and (max-width: 767px) {
   #header {
-    /* position: fixed;
-    box-sizing: border-box;
-    width: 100%;
-    top: 0;
-    right: 0;
-    z-index: 100;
-    padding: 0;
-    background:none; */
     display: none;
-  }
-  /* #header nav {
-    height: 9vh;
-    background: -moz-linear-gradient(-135deg, #56eee1, #558de0);
-    background: -webkit-linear-gradient(-135deg, #56eee1, #558de0);
-    background: linear-gradient(-135deg, #56eee1, #558de0);
-  }
-  #header h1 {
-    margin: 0 0 0 20px;
-    width: 100%;
-  }
-  #header img {
-    width: 50%;
-  }
-  #header a {
-    display: block;
-  }
-  #header ul {
-    -webkit-flex-direction: column;
-    flex-direction: column;
-    -webkit-justify-content: center;
-    justify-content: center;
-    background: rgba(0, 0, 0, .8);
-    position: absolute;
-    top: 0;
-    left: 0px;
-    width: 100%;
-    height: 100vh;
-    z-index: 980;
-    display: none;
-    padding: 24vw 0;
-  }
-  #header ul li {
-    padding: 6vw;
-    text-align: center;
-  }
-  #header ul li:nth-child(1) a {
-    font-size: 12vw;
-    letter-spacing: 0.06em;
-  }
-  #header  ul li a {
-    display: block;
-    font-weight: bold;
-    background: transparent;
-    margin: 0px;
-    padding: 2vw 0 0;
-    font-size: 6vw;
-    letter-spacing: 0.16em;
-  }
-  #header ul li a:hover {
-    opacity: 0.7;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
-  }
-  #header ul span {
-    margin: 0 0 0 8%;
-  }
-  #header .nav__icon,
-  #header .nav__icon span {
-    display: none;
-  }
-  #header .nav__icon {
-    width: 52px;
-    height: 28px;
-    margin-right: 10px;
     position: relative;
-    cursor: pointer;
   }
-  #header .nav__icon span {
-    background: #fff;
-    position: absolute;
-    left: 0;
-    height: 4px;
-    border-radius: 4px;
-  }
-  #header.nav__icon span:nth-of-type(1) {
-    top: 0;
-  }
-  #header .nav__icon span:nth-of-type(2) {
-    top: 12px;
-  }
-  #header .nav__icon span:nth-of-type(3) {
-    bottom: 0;
-  }
-  #header .nav__icon.active span:nth-of-type(1) {
-    -webkit-transform: translateY(12px) rotate(-45deg);
-    transform: translateY(12px) rotate(-45deg);
-  }
-  #header .nav__icon.active span:nth-of-type(2) {
-    display: none;
-  }
-  #header  .nav__icon.active span:nth-of-type(3) {
-    -webkit-transform: translateY(-12px) rotate(45deg);
-    transform: translateY(-12px) rotate(45deg);
-  }
-  #header .nav__icon,
-  #header .nav__icon span {
-    display: inline-block;
-    transition: all .4s;
-    box-sizing: border-box;
-    z-index: 999;
-    position: absolute;
-    right: 0;
-  }*/
 }
 
 /* ======================================
@@ -298,6 +189,13 @@ sp ハンバーガー css ここから
     background: linear-gradient(-135deg, #56eee1, #558de0);
     box-shadow: 0 2px 6px rgba(0, 0, 0, .16);
     z-index: 999;
+  }
+  #header-sp ul li a.active {
+    color: #4d729c94;
+  }
+  #header {
+    display: none;
+    position: relative;
   }
   .global-nav {
     position: fixed;
@@ -458,7 +356,7 @@ index css ここから
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 90%;
-  padding-top: 10%;
+  padding-top: 16%;
   padding-bottom: 4%;
   margin-bottom: 10%;
 }
@@ -480,13 +378,10 @@ index css ここから
   letter-spacing: 0.05em;
 }
 
-#mv-top #header {
-  display: none;
-}
 
 .scroll-top {
   width: 30%;
-  margin: 10% auto 0;
+  margin: 8% auto 0;
   display: block;
   padding-top: 120px;
   position: relative;
@@ -925,6 +820,7 @@ media screen ここから
     background-size: cover;
     background-position: 0 90%;
     height: 100vh;
+    padding-top: 0;
   }
   #mv-top h1 {
     font-size: 24vw;

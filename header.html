@@ -31,27 +31,6 @@
 	</div>
 	<div class="black-bg" id="js-black-bg"></div>
 </header>
-
-
-
-
-<!-- <script>
-	$('.nav__icon').on('click', function () {
-		$(this).toggleClass('active');
-		$('nav ul').slideToggle();
-	});
-
-	$(window).on('load resize', function () {
-		var w = $(window).width();
-		var h = $(window).height();
-		var x = 700;
-		if (w >= x) {
-			$('nav ul').css({ display: 'flex', height: 'auto' });
-		} else {
-			$('nav ul').css({ display: 'none', height: '100vh' });
-		}
-	});
-</script> -->
 <script type="text/javascript">
 	$(function () {
 		// ここからpcヘッダー
@@ -59,13 +38,24 @@
 			var $href = $(this).attr('href');
 			console.log(location.href)
 			console.log($href)
-			if (location.href.match($href)) {
+			
+			if (location.href.match($href) && !location.href.match("/index.html")) {
 				$(this).addClass('active');
 			} else {
 				$(this).removeClass('active');
 			}
 		});
-		// ここまでpcヘッダー
+		$('#header-sp li a').each(function () {
+			var $href = $(this).attr('href');
+			console.log(location.href)
+			console.log($href)
+			
+			if (location.href.match($href) && !location.href.match("/index.html")) {
+				$(this).addClass('active');
+			} else {
+				$(this).removeClass('active');
+			}
+		});
 		
 		// ここからspハンバーガー
 		toggleNav();
