@@ -33,7 +33,7 @@
 </header>
 <script type="text/javascript">
 	$(function () {
-		// ここからpcヘッダー
+		// ここからpcヘッダー activ設定
 		$('#header li a').each(function () {
 			var $href = $(this).attr('href');
 			console.log(location.href)
@@ -45,6 +45,7 @@
 				$(this).removeClass('active');
 			}
 		});
+		// ここからspヘッダー activ設定
 		$('#header-sp li a').each(function () {
 			var $href = $(this).attr('href');
 			console.log(location.href)
@@ -72,7 +73,6 @@
 		blackBg.addEventListener('click', function () {
 			body.classList.remove('nav-open');
 		});
-		// ここまでspハンバーガー
 	}
 </script>
 
