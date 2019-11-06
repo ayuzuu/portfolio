@@ -421,3 +421,53 @@ work css
         font-size: 14px;
     }
 }
+
+/* ======================================
+other-area
+====================================== */
+
+.other-area {
+    width: 30%;
+    margin: 10% auto 0;
+}
+.other-area .page-box {
+    display: flex;
+    justify-content: space-between;
+}
+.page-box .prev a, .page-box .next a {
+    color: #658ee1;
+    font-weight: bold;
+    font-size: 22px;
+}
+.other-area .list-all {
+    width: 100%;
+    margin: 20% auto 0;
+}
+.other-area .list-all a {
+    text-align: center;
+    color: #658ee1;
+    display: block;
+}
+.page-box .prev a:hover, .page-box .next a:hover {
+    color: #ffb7c5;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+.page-box .mr {
+    margin-right: 10px;
+}
+.page-box .ml {
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 767px) {
+    .other-area {
+        width: 60%;
+        margin-top: 10%;
+    }
+    .page-box .prev a, .page-box .next a {
+        color: #658ee1;
+        font-weight: bold;
+        font-size: 18px;
+    }
+}

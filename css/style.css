@@ -218,7 +218,7 @@ sp ハンバーガー css ここから
   }
   .hamburger {
     position: absolute;
-    left: 24%;
+    left: 22%;
     top: 10%;
     width: 16%;
     /* クリックしやすいようにちゃんと幅を指定する */
