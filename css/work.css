@@ -434,10 +434,13 @@ other-area
     display: flex;
     justify-content: space-between;
 }
-.page-box .prev a, .page-box .next a {
+.page-box .prev a, .page-box .next a, .page-box .last-page a, .page-box .first-page a {
     color: #658ee1;
     font-weight: bold;
     font-size: 22px;
+}
+.page-box .last-page, .page-box .first-page {
+    margin: 0 auto;
 }
 .other-area .list-all {
     width: 100%;
