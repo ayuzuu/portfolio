@@ -134,7 +134,7 @@ header css
   font-family: 'Damion', cursive;
   margin: 0 auto;
   font-size: 4.2vw;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.01em;
   font-weight: 100;
 }
 #header ul li a {
@@ -246,7 +246,7 @@ sp ハンバーガー css ここから
   }
   .global-nav__item:nth-child(1) {
     font-size: 13vw;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.01em;
     font-family: 'Damion', cursive;
     margin: 0 auto 8%;
     font-weight: 100;
@@ -447,6 +447,7 @@ index css ここから
 .back-link {
   width: 200px;
   position: relative;
+  z-index: 1;
 }
 
 .back-link a {
@@ -475,7 +476,7 @@ profile css ここから
 ====================================== */
 
 .top-profile-area {
-  width: 80%;
+  width: 960px;
   margin: 0 auto;
   padding: 10% 0 10%;
 }
@@ -485,7 +486,7 @@ profile css ここから
   margin: 0 auto;
   letter-spacing: 0.05em;
   line-height: 1.5;
-  font-size: 12px;
+  font-size: 14px;
   text-align: justify;
 }
 
@@ -518,7 +519,7 @@ profile css ここから
   color: #558de0;
   border: 1px #558de0 solid;
   margin-right: 15px;
-  font-size: 12px;
+  font-size: 14px;
   text-align: center;
 }
 
@@ -558,7 +559,7 @@ works css ここから
 }
 
 .top-work-area .inner {
-  width: 80%;
+  width: 960px;
   margin: 0 auto 4%;
 }
 
@@ -663,7 +664,7 @@ illust css ここから
 }
 
 .top-illust-area .inner {
-  width: 80%;
+  width: 960px;
   margin: 0 auto 4%;
 }
 
@@ -766,12 +767,12 @@ button css ここから
 ====================================== */
 
 .btn {
-  width: 30%;
+  width: 340px;
   text-align: center;
   margin: 0 auto;
-  padding: 2vw 6vw;
+  padding: 2.4% 6%;
   border: none;
-  font-size: 1.8vw;
+  font-size: 20px;
   color: inherit;
   background: none;
   cursor: pointer;

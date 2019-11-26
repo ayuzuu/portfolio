@@ -4,7 +4,7 @@
 work css
 ====================================== */
 #illust {
-    width: 100%;
+    width: 960px;
     margin: 0 auto;
     padding: 12% 0 0;
 }
@@ -30,9 +30,11 @@ work css
     width: 100%;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
 }
 .illust-area-box {
-    width: ;
+    width: calc(100% / 2);
 }
 .illust-box {
     width: 90%;
@@ -102,6 +104,10 @@ work css
     .illust-area {
         padding: 0;
         display: block;
+    }
+    .illust-area-box {
+        width: 100%;
+        margin: 0 auto;
     }
     .illust-box {
         position: relative;
