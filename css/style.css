@@ -360,7 +360,7 @@ index css ここから
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 90%;
-  padding-top: 16%;
+  padding-top: 12%;
   padding-bottom: 4%;
   margin-bottom: 10%;
 }
@@ -847,9 +847,9 @@ media screen ここから
   }
   .scroll-top {
     width: 30%;
-    margin: 12% auto 0;
+    margin: 8% auto 0;
     display: block;
-    padding-top: 120px;
+    padding-top: 100px;
     position: absolute;
     bottom: 10%;
     left: 0;
