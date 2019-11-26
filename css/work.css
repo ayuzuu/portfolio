@@ -336,6 +336,11 @@ work css
     color: #558de0;
     padding: 6% 8%;
 }
+a.back-top {
+    text-align: center;
+    color: #658ee1;
+    font-weight: bold;
+}
 
 
 
@@ -434,6 +439,7 @@ other-area
 .other-area .page-box {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .prev a, .next a {
     color: #658ee1;
@@ -444,6 +450,7 @@ other-area
     width: 48%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 0 auto;
 }
 .other-area .list-all {
@@ -486,9 +493,46 @@ other-area
         width: 60%;
         margin-top: 10%;
     }
-    .page-box .prev a, .page-box .next a {
+    .prev a, .next a {
         color: #658ee1;
         font-weight: bold;
         font-size: 18px;
     }
+    .page-first-last-box {
+        width: 52%;
+    }
 }
+
+.btn-top {
+    width: 280px;
+    text-align: center;
+    margin: 4% auto 0;
+    padding: 1.4% 6%;
+    border: none;
+    font-size: 16px;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    display: block;
+    letter-spacing: 1px;
+    font-weight: 700;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid #55dce0;
+    color: #55dce0;
+  }
+  .btn-top:hover, .btn-top:active {
+    color: #fff;
+    background: #55dce0;
+  }
+  @media screen and (max-width: 767px) {
+      .btn-top {
+        width: 64%;
+        padding: 3.4% 0;
+        font-size: 14px;
+        margin: 6% auto 0;
+      }
+  }

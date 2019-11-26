@@ -544,6 +544,9 @@ profile css ここから
     padding: 0;
     margin: 0 auto 10%;
   }
+  .top-profile-area .profile-text {
+    font-size: 12px;
+  }
   .top-profile-area .profile-text span {
     font-size: 5vw;
   }
@@ -647,7 +650,7 @@ works css ここから
 
 @media screen and (max-width: 767px) {
   .top-work-area .inner {
-    width: 90%;
+    width: 94%;
   }
   #top-work-list li {
     width: calc(96% / 2);
@@ -751,7 +754,7 @@ illust css ここから
 
 @media screen and (max-width: 767px) {
   .top-illust-area .inner {
-    width: 90%;
+    width: 94%;
   }
   #top-illust-list li {
     width: calc(96% / 3);
@@ -808,7 +811,7 @@ button css ここから
 
 @media screen and (max-width: 767px) {
   .btn {
-    width: 40%;
+    width: 50%;
     font-size: 3vw;
     padding: 4vw 6vw;
   }
