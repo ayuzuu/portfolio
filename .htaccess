@@ -1,0 +1,19 @@
+RewriteEngine on
+
+# http→https
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# 初期ドメイン → portfolio.s.fujimoto.cloud
+RewriteCond %{HTTP_HOST} ^s-fujimoto\.sakura\.ne\.jp
+RewriteRule ^(.*)$ https://portfolio.s.fujimoto.cloud/$1 [L,R=301] 
+
+# s.fujimoto.cloud → portfolio.s.fujimoto.cloud
+RewriteCond %{HTTP_HOST} ^s\.fujimoto\.cloud
+RewriteRule ^(.*)$ https://portfolio.s.fujimoto.cloud/$1 [L,R=301] 
+
+# BASIC認証
+AuthType Basic
+AuthName "Input ID and Password."
+AuthUserFile /home/s-fujimoto/.htpasswd
+require valid-user
