@@ -628,12 +628,12 @@ works css ここから
 
 .top-work-box .label-text p {
   margin: 4px 0;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .top-work-box .text-category {
   display: block;
-  font-size: 7px;
+  font-size: 12px;
   text-align: 1.2;
 }
 
@@ -656,6 +656,13 @@ works css ここから
   #top-work-list li {
     width: calc(96% / 2);
     margin-bottom: 2%;
+  }
+  .top-work-box .label-text p {
+    font-size: 2vw;
+  }
+  
+  .top-work-box .text-category {
+    font-size: 2vw;
   }
 }
 
