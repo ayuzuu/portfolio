@@ -1,4 +1,4 @@
-name: CI
+name: 本番サーバーに自動アップロード
 
 on:
   push:
