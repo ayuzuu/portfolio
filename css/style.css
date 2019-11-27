@@ -360,9 +360,10 @@ index css ここから
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 90%;
-  padding-top: 10%;
+  padding-top: 12%;
   padding-bottom: 4%;
   margin-bottom: 10%;
+  min-width: 960px;
 }
 
 #mv-top h1 {
@@ -385,7 +386,7 @@ index css ここから
 
 .scroll-top {
   width: 30%;
-  margin: 8% auto 0;
+  margin: 6% auto 0;
   display: block;
   padding-top: 120px;
   position: relative;
@@ -828,8 +829,8 @@ media screen ここから
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 90%;
-    height: 100vh;
     padding-top: 0;
+    min-width: 0;
   }
   #mv-top h1 {
     font-size: 24vw;
