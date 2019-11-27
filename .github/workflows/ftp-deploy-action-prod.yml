@@ -20,4 +20,4 @@ jobs:
         FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
         FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
         REMOTE_DIR: www
-        ARGS: --delete --dry-run
+        ARGS: --delete
