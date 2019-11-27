@@ -658,11 +658,12 @@ works css ここから
     margin-bottom: 2%;
   }
   .top-work-box .label-text p {
-    font-size: 2vw;
+    font-size: 3vw;
   }
   
   .top-work-box .text-category {
-    font-size: 2vw;
+    font-size: 2.4vw;
+    line-height: 1.1;
   }
 }
 
