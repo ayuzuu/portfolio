@@ -4,7 +4,7 @@
 work css
 ====================================== */
 #illust {
-    width: 100%;
+    width: 960px;
     margin: 0 auto;
     padding: 12% 0 0;
 }
@@ -30,9 +30,11 @@ work css
     width: 100%;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
 }
 .illust-area-box {
-    width: ;
+    width: calc(100% / 2);
 }
 .illust-box {
     width: 90%;
@@ -103,6 +105,10 @@ work css
         padding: 0;
         display: block;
     }
+    .illust-area-box {
+        width: 100%;
+        margin: 0 auto;
+    }
     .illust-box {
         position: relative;
         display: block;
@@ -119,3 +125,37 @@ work css
         font-size: 4vw;
     }
 }
+
+.btn-top {
+    width: 280px;
+    text-align: center;
+    margin: 4% auto 0;
+    padding: 1.4% 6%;
+    border: none;
+    font-size: 16px;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    display: block;
+    letter-spacing: 1px;
+    font-weight: 700;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid #55dce0;
+    color: #55dce0;
+  }
+  .btn-top:hover, .btn-top:active {
+    color: #fff;
+    background: #55dce0;
+  }
+  @media screen and (max-width: 767px) {
+      .btn-top {
+        width: 64%;
+        padding: 3.4% 0;
+        font-size: 14px;
+        margin: 10% auto 0;
+      }
+  }

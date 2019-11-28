@@ -115,7 +115,7 @@ header css
   display: -webkit-flex;
   display: flex;
   list-style: none;
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -126,14 +126,15 @@ header css
   margin-bottom: 0.5%;
 }
 #header ul li:first-child {
+  margin-top: 0;
   margin-right: auto;
 }
 #header ul li:first-child a {
   margin-top: 0;
   font-family: 'Damion', cursive;
   margin: 0 auto;
-  font-size: 4.4vw;
-  letter-spacing: 0.06em;
+  font-size: 4.2vw;
+  letter-spacing: 0.01em;
   font-weight: 100;
 }
 #header ul li a {
@@ -143,6 +144,7 @@ header css
   border-radius: 5px;
   display: block;
   letter-spacing: 0.1em;
+  font-size: 1.8vw;
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
 }
@@ -157,7 +159,7 @@ header css
 }
 #header ul span {
   color: #fff;
-  font-size: 10px;
+  font-size: 0.8vw;
   display: block;
   margin: 0 0 0 20%;
   text-align: center;
@@ -244,7 +246,7 @@ sp ハンバーガー css ここから
   }
   .global-nav__item:nth-child(1) {
     font-size: 13vw;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.01em;
     font-family: 'Damion', cursive;
     margin: 0 auto 8%;
     font-weight: 100;
@@ -358,15 +360,16 @@ index css ここから
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 90%;
-  padding-top: 16%;
+  padding-top: 12%;
   padding-bottom: 4%;
   margin-bottom: 10%;
+  min-width: 960px;
 }
 
 #mv-top h1 {
   font-family: 'Damion', cursive;
   color: #fff;
-  font-size: 13vw;
+  font-size: 12vw;
   margin: 0 auto;
   text-align: center;
 }
@@ -383,7 +386,7 @@ index css ここから
 
 .scroll-top {
   width: 30%;
-  margin: 8% auto 0;
+  margin: 6% auto 0;
   display: block;
   padding-top: 120px;
   position: relative;
@@ -445,6 +448,7 @@ index css ここから
 .back-link {
   width: 200px;
   position: relative;
+  z-index: 1;
 }
 
 .back-link a {
@@ -473,7 +477,7 @@ profile css ここから
 ====================================== */
 
 .top-profile-area {
-  width: 80%;
+  width: 960px;
   margin: 0 auto;
   padding: 10% 0 10%;
 }
@@ -483,7 +487,7 @@ profile css ここから
   margin: 0 auto;
   letter-spacing: 0.05em;
   line-height: 1.5;
-  font-size: 12px;
+  font-size: 14px;
   text-align: justify;
 }
 
@@ -516,7 +520,7 @@ profile css ここから
   color: #558de0;
   border: 1px #558de0 solid;
   margin-right: 15px;
-  font-size: 12px;
+  font-size: 14px;
   text-align: center;
 }
 
@@ -541,6 +545,9 @@ profile css ここから
     padding: 0;
     margin: 0 auto 10%;
   }
+  .top-profile-area .profile-text {
+    font-size: 12px;
+  }
   .top-profile-area .profile-text span {
     font-size: 5vw;
   }
@@ -556,7 +563,7 @@ works css ここから
 }
 
 .top-work-area .inner {
-  width: 80%;
+  width: 960px;
   margin: 0 auto 4%;
 }
 
@@ -621,12 +628,12 @@ works css ここから
 
 .top-work-box .label-text p {
   margin: 4px 0;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .top-work-box .text-category {
   display: block;
-  font-size: 7px;
+  font-size: 12px;
   text-align: 1.2;
 }
 
@@ -644,11 +651,19 @@ works css ここから
 
 @media screen and (max-width: 767px) {
   .top-work-area .inner {
-    width: 90%;
+    width: 94%;
   }
   #top-work-list li {
     width: calc(96% / 2);
     margin-bottom: 2%;
+  }
+  .top-work-box .label-text p {
+    font-size: 3vw;
+  }
+  
+  .top-work-box .text-category {
+    font-size: 2.4vw;
+    line-height: 1.1;
   }
 }
 
@@ -661,7 +676,7 @@ illust css ここから
 }
 
 .top-illust-area .inner {
-  width: 80%;
+  width: 960px;
   margin: 0 auto 4%;
 }
 
@@ -748,7 +763,7 @@ illust css ここから
 
 @media screen and (max-width: 767px) {
   .top-illust-area .inner {
-    width: 90%;
+    width: 94%;
   }
   #top-illust-list li {
     width: calc(96% / 3);
@@ -764,12 +779,12 @@ button css ここから
 ====================================== */
 
 .btn {
-  width: 30%;
+  width: 340px;
   text-align: center;
   margin: 0 auto;
-  padding: 2vw 6vw;
+  padding: 2.4% 6%;
   border: none;
-  font-size: 1.8vw;
+  font-size: 20px;
   color: inherit;
   background: none;
   cursor: pointer;
@@ -803,9 +818,10 @@ button css ここから
   background: #558de0;
 }
 
+
 @media screen and (max-width: 767px) {
   .btn {
-    width: 40%;
+    width: 50%;
     font-size: 3vw;
     padding: 4vw 6vw;
   }
@@ -821,8 +837,8 @@ media screen ここから
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 90%;
-    height: 100vh;
     padding-top: 0;
+    min-width: 0;
   }
   #mv-top h1 {
     font-size: 24vw;
@@ -840,9 +856,9 @@ media screen ここから
   }
   .scroll-top {
     width: 30%;
-    margin: 12% auto 0;
+    margin: 8% auto 0;
     display: block;
-    padding-top: 120px;
+    padding-top: 100px;
     position: absolute;
     bottom: 10%;
     left: 0;
