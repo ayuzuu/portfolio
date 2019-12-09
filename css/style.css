@@ -877,7 +877,7 @@ media screen ここから
     display: block;
     padding-top: 100px;
     position: absolute;
-    bottom: 10%;
+    bottom: 12%;
     left: 0;
     right: 0;
     color: #5d82e0;
@@ -956,7 +956,7 @@ media screen ここから
 }
 @media only screen and (min-width: 420px) and (max-width: 766px) { 
   #logo {
-    padding: 40% 0 60vh;
+    padding: 40% 0 56vh;
   }
   #mv-top h1 {
     font-size: 20vw;
