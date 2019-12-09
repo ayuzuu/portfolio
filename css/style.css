@@ -552,7 +552,7 @@ profile css ここから
     font-size: 5vw;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 960px) { 
+@media only screen and (min-width: 768px) and (max-width: 1200px) { 
   .top-profile-area {
     width: 90%;
   }
@@ -674,7 +674,7 @@ works css ここから
 
 @media only screen and (min-width: 768px) and (max-width: 1200px) { 
   .top-work-area .inner {
-    width: 90%;
+    width: 95%;
   }
 }
 
@@ -787,7 +787,7 @@ illust css ここから
 }
 @media only screen and (min-width: 768px) and (max-width: 1200px) { 
   .top-illust-area .inner {
-    width: 90%;
+    width: 95%;
   }
 }
 
@@ -952,6 +952,25 @@ media screen ここから
   }
   .fa-user-circle:before, .fa-desktop:before, .fa-palette:before {
     font-size: 5.6vw;
+  }
+}
+@media only screen and (min-width: 420px) and (max-width: 766px) { 
+  #logo {
+    padding: 24% 0 46vh;
+  }
+  #mv-top h1 {
+    font-size: 20vw;
+  }
+  #mv-top .name {
+    font-size: 4vw;
+  }
+  .scroll-top {
+    color: #fff;
+    font-size: 3vw;
+  }
+  .scroll-top span {
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1200px) { 
