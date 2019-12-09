@@ -552,6 +552,11 @@ profile css ここから
     font-size: 5vw;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 960px) { 
+  .top-profile-area {
+    width: 90%;
+  }
+}
 
 /* ======================================
 works css ここから
@@ -667,6 +672,13 @@ works css ここから
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1200px) { 
+  .top-work-area .inner {
+    width: 90%;
+  }
+}
+
+
 /* ======================================
 illust css ここから
 ====================================== */
@@ -771,6 +783,11 @@ illust css ここから
   }
   #top-illust-list li:last-child {
     display: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1200px) { 
+  .top-illust-area .inner {
+    width: 90%;
   }
 }
 
@@ -935,5 +952,10 @@ media screen ここから
   }
   .fa-user-circle:before, .fa-desktop:before, .fa-palette:before {
     font-size: 5.6vw;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1200px) { 
+  #mv-top .top-title {
+    min-width: 0;
   }
 }
