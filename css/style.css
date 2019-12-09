@@ -956,21 +956,13 @@ media screen ここから
 }
 @media only screen and (min-width: 420px) and (max-width: 766px) { 
   #logo {
-    padding: 20% 0 44vh;
+    padding: 44% 0 67vh;
   }
   #mv-top h1 {
     font-size: 20vw;
   }
   #mv-top .name {
     font-size: 4vw;
-  }
-  .scroll-top {
-    color: #fff;
-    font-size: 3vw;
-  }
-  .scroll-top span {
-    border-left: 1px solid #fff;
-    border-bottom: 1px solid #fff;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1200px) { 
