@@ -90,7 +90,7 @@ work css
 
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
     #illust {
         width: 95%;
         margin: 28% auto 0;
@@ -123,6 +123,12 @@ work css
     }
     .fa-arrow-left {
         font-size: 4vw;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    #illust {
+        width: 95%;
     }
 }
 
