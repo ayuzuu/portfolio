@@ -956,7 +956,7 @@ media screen ここから
 }
 @media only screen and (min-width: 420px) and (max-width: 766px) { 
   #logo {
-    padding: 24% 0 46vh;
+    padding: 24% 0 30%;
   }
   #mv-top h1 {
     font-size: 20vw;
