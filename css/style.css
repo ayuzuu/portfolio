@@ -866,7 +866,7 @@ media screen ここから
     font-size: 6vw;
   }
   #logo {
-    padding: 50% 0 60vh;
+    padding: 50% 0 56vh;
     position: relative;
     background-image: url(/images/common/bg.png);
     background-size: cover;
