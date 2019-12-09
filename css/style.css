@@ -849,7 +849,7 @@ media screen ここから
     font-size: 6vw;
   }
   #logo {
-    padding: 50% 0 70%;
+    padding: 50% 0 60vh;
     position: relative;
     background-image: url(/images/common/bg.png);
     background-size: cover;
@@ -872,7 +872,7 @@ media screen ここから
   }
   .scroll-top span {
     position: absolute;
-    top: 40%;
+    top: 26%;
     left: 50%;
     width: 24px;
     height: 24px;
