@@ -12,12 +12,12 @@ work css
     -webkit-transition: all .3s;
     transition: all .3s;
 }
-#work {
+#student {
     width: 960px;
     margin: 0 auto;
     padding: 16% 0 0;
 }
-#work h1 {
+#student h1 {
     text-align: center;
     color: #658ee1;
     font-size: 6vw;
@@ -27,242 +27,133 @@ work css
     font-family: 'Montserrat', sans-serif;
 }
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
-    #work {
+    #student {
         width: 95%;
     }
 }
-/* graphic */
-.work-box {
+/* 卒制 */
+.work-box-st1 {
     width: 90%;
     position: relative;
     display: block;
     padding: 70% 0 0;
-    margin: 0 auto;
+    margin: 0 auto 24%;
 }
-.work-box-deli {
-    width: 90%;
-    position: relative;
-    display: block;
-    padding: 70% 0 0;
-    margin: 0 auto;
-}
-.work-box-deli .img-box {
-    position: absolute;
-    width: 70%;
-    top: 10%;
-    left: 0;
-    z-index: 1;
-}
-.work-box-deli .img-box img {
-    width:100%;
-    box-shadow:0px 0px 16px 4px #d4d4d4;   
-}
-.work-box-deli .img-box2 {
-    position: absolute;
-    width: 50%;
-    top: 46%;
-    right: 0%;
-    z-index: 2;
-}
-.work-box-deli .img-box2 img {
-    width:100%;
-    box-shadow:0px 0px 16px 4px #d4d4d4;
-}
-.work-box-nmb, .work-box-mens {
-    width: 90%;
-    margin: 0 auto;
-    position: relative;
-    display: block;    
-}
-.work-box-nmb .img-box, .work-box-mens .img-box{
-    width: 80%;
-    text-align: center;
-    margin: 6% auto 0;
-}
-.work-box-nmb .img-box img, .work-box-mens .img-box img {
-    width: 100%;
-    box-shadow: 0px 0px 16px 4px #d4d4d4;
-}
-.work-box-spmake {
-    width: 90%;
-    margin: 0 auto;
-    position: relative;
-    display: block;
-    padding: 84% 0 0;
-}
-.work-box-spmake .img-box {
-    position: absolute;
-    width: 50%;
-    top: 10%;
-    left: 0;
-    z-index: 1;
-}
-.work-box-spmake .img-box img {
-    width: 100%;
-    box-shadow:0px 0px 16px 4px #d4d4d4;    
-}
-.work-box-spmake .img-box2 {
-    position: absolute;
-    width: 54%;
-    top: 26%;
-    left: 46%;
-    z-index: 2;
-}
-.work-box-spmake .img-box2 img {
-    width: 100%;
-    box-shadow:0px 0px 16px 4px #d4d4d4;
-}
-.work-box-summake {
-    width: 90%;
-    margin: 0 auto;
-    position: relative;
-    display: block;
-    padding: 70% 0 0;
-}
-.work-box-summake .img-box {
-    position: absolute;
-    width: 68%;
-    top: 10%;
-    left: 0;
-    z-index: 1;
-}
-.work-box-summake .img-box img {
-    width:100%;
-    box-shadow:0px 0px 16px 4px #d4d4d4;
-}
-.work-box-summake .img-box2 {
-    position: absolute;
-    width: 32%;
-    top: 40%;
-    right: 6%;
-    z-index: 2;
-}
-.work-box-summake .img-box2 img {
-    width: 100%;
-    box-shadow:0px 0px 16px 4px #d4d4d4;
-}
-.work-box-halloween {
-    width: 90%;
-    position: relative;
-    display: block;
-    padding: 70% 0 0;
-    margin: 0 auto;
-}
-.work-box-halloween .img-box {
-    position: absolute;
-    width: 68%;
-    top: 10%;
-    left: 0;
-    z-index: 1;
-}
-.work-box-halloween .img-box img {
-    width:100%;
-    box-shadow:0px 0px 16px 4px #d4d4d4;
-}
-.work-box-halloween .img-box2 {
-    position: absolute;
-    width: 50%;
-    top: 46%;
-    right: 0%;
-    z-index: 2;
-}
-.work-box-halloween .img-box2 img {
-    width:100%;
-    box-shadow:0px 0px 16px 4px #d4d4d4;
-}
-.work-box-girl {
-    width: 90%;
-    position: relative;
-    display: block;
-    padding: 70% 0 0;
-    margin: 0 auto;
-}
-.work-box-girl .img-box {
-    position: absolute;
-    width: 70%;
-    top: 10%;
-    left: 0;
-    z-index: 1;
-}
-.work-box-girl .img-box img {
-    width:100%;
-    box-shadow:0px 0px 16px 4px #d4d4d4;
-}
-.work-box-girl .img-box2 {
-    position: absolute;
-    width: 50%;
-    top: 46%;
-    right: 0%;
-    z-index: 2;
-}
-.work-box-girl .img-box2 img {
-    width:100%;
-    box-shadow:0px 0px 16px 4px #d4d4d4;
-}
-.work-box-aqa, .work-box-summerdm, .work-box-autumn, .work-box-gri {
-    width: 90%;
-    position: relative;
-    display: block;
-    padding: 70% 0 0;
-    margin: 0 auto;
-}
-.work-box-aqa .img-box, .work-box-summerdm .img-box, .work-box-autumn .img-box, .work-box-gri .img-box {
+.work-box-st1 .img-box {
     position: absolute;
     width: 66%;
     top: 10%;
     left: 0;
     z-index: 1;
 }
-.work-box-aqa .img-box img, .work-box-summerdm .img-box img, .work-box-autumn .img-box img, .work-box-gri .img-box img {
+.work-box-st1 .img-box img {
     width:100%;
+    box-shadow: 0px 0px 16px 4px #d4d4d4;
 }
-.work-box-aqa .img-box2, .work-box-summerdm .img-box2, .work-box-autumn .img-box2, .work-box-gri .img-box2 {
+.work-box-st1 .img-box2 {
     position: absolute;
-    width: 50%;
-    top: 46%;
+    width: 38%;
+    top: 54%;
     right: 0%;
     z-index: 2;
 }
-.work-box-aqa .img-box2 img, .work-box-summerdm .img-box2 img, .work-box-autumn .img-box2 img, .work-box-gri .img-box2 img {
+.work-box-st1 .img-box2 img {
     width:100%;
+    box-shadow: 0px 0px 16px 4px #d4d4d4;
 }
-.work-box-sijou {
+
+/* こんぺいとう */
+.work-box-st2 {
     width: 90%;
     position: relative;
     display: block;
     padding: 70% 0 0;
-    margin: 0 auto;
+    margin: 0 auto 34%;
 }
-.work-box-sijou .img-box {
+.work-box-st2 .img-box {
     position: absolute;
-    width: 74%;
+    width: 66%;
     top: 10%;
     left: 0;
     z-index: 1;
 }
-.work-box-sijou .img-box img {
-    width:auto;
-    max-width:100%;
-    max-height:100%;
-    box-shadow:0px 0px 16px 4px #d4d4d4;
+.work-box-st2 .img-box img {
+    width:100%;
+    box-shadow: 0px 0px 16px 4px #d4d4d4;
 }
-.work-box-sijou .img-box2 {
+.work-box-st2 .img-box2 {
     position: absolute;
-    width: 50%;
-    top: 40%;
-    right: 0;
+    width: 38%;
+    top: 50%;
+    right: 0%;
     z-index: 2;
 }
-.work-box-sijou .img-box2 img {
-    width:auto;
-    max-width:100%;
-    max-height:100%;
-    box-shadow:0px 0px 16px 4px #d4d4d4;
+.work-box-st2 .img-box2 img {
+    width:100%;
+    box-shadow: 0px 0px 16px 4px #d4d4d4;
 }
 
+/* アシックス */
+.work-box-st3 {
+    width: 90%;
+    position: relative;
+    display: block;
+    padding: 70% 0 0;
+    margin: 0 auto 40%;
+}
+.work-box-st3 .img-box {
+    position: absolute;
+    width: 66%;
+    top: 10%;
+    left: 0;
+    z-index: 1;
+}
+.work-box-st3 .img-box img {
+    width:100%;
+    box-shadow: 0px 0px 16px 4px #d4d4d4;
+}
+.work-box-st3 .img-box2 {
+    position: absolute;
+    width: 38%;
+    top: 50%;
+    right: 0%;
+    z-index: 2;
+}
+.work-box-st3 .img-box2 img {
+    width:100%;
+    box-shadow: 0px 0px 16px 4px #d4d4d4;
+}
 
-
-
+/* クリスマス */
+.work-box-st4 {
+    width: 90%;
+    position: relative;
+    display: block;
+    padding: 70% 0 0;
+    margin: 0 auto 42%;
+}
+.work-box-st4 .img-box {
+    position: absolute;
+    width: 66%;
+    top: 10%;
+    left: 0;
+    z-index: 1;
+}
+.work-box-st4 .img-box img {
+    width:100%;
+    box-shadow: 0px 0px 16px 4px #d4d4d4;
+}
+.work-box-st4 .img-box2 {
+    position: absolute;
+    width: 38%;
+    top: 50%;
+    right: 0%;
+    z-index: 2;
+}
+.work-box-st4 .img-box2 img {
+    width:100%;
+    box-shadow: 0px 0px 16px 4px #d4d4d4;
+}
 .work-text {
     width: 90%;
     display: block;
@@ -322,7 +213,7 @@ work css
     margin: 0 auto;
     top: 10%;
     left: 0;
-    z-index: 1;
+    z-index: 1
 }
 .work-box-web .img-box2 img {
     width:auto;
@@ -336,7 +227,7 @@ work css
     top: -70px;
     left: 0;
     margin: 6% 0 0 4%;
-    z-index: 1;
+    z-index: 1111;
     color: #558de0;
     padding: 6% 8%;
 }
@@ -347,13 +238,12 @@ a.back-top {
 }
 
 
-
 @media screen and (max-width: 767px) {
-    #work {
+    #student {
         width: 95%;
         padding: 34% 0 0;
     }
-    #work h1{
+    #student h1{
         font-size: 14vw;
         margin-bottom: 6vw;
     }
@@ -376,59 +266,31 @@ a.back-top {
         margin: 0 auto;
         padding: 70% 0 0;
     }
-    .work-box, .work-box-nmb, .work-box-mens, .work-box3, .work-box4, .work-box-web {
-        width: 100%;
-    }
-    .work-box-aqa, .work-box-halloween, .work-box-sijou, .work-box-spmake, .work-box-deli, .work-box-summake,
-    .work-box-girl, .work-box-summerdm, .work-box-autumn, .work-box-gri {
+    .work-box-st1, .work-box-st2, .work-box-st3, .work-box-st4 {
         width: 90%;
         position: relative;
         display: block;
         padding: 0% 0 0;
-        margin: 10% auto 0;
+        margin: 10% auto 24%;
     }
-    .work-box-aqa .img-box, .work-box-halloween .img-box, .work-box-sijou .img-box, .work-box-spmake .img-box,
-    .work-box-deli .img-box, .work-box-summake .img-box, .work-box-girl .img-box,
-    .work-box-summerdm .img-box, .work-box-autumn .img-box, .work-box-gri .img-box {
+    .work-box-st1 .img-box, .work-box-st2 .img-box, .work-box-st3 .img-box, .work-box-st4 .img-box {
         position: relative;
         width: 100%;
         margin-bottom: 6%;
     }
-    .work-box-aqa .img-box img,
-    .work-box-halloween .img-box img, .work-box-sijou .img-box img, .work-box-spmake .img-box img,
-    .work-box-deli .img-box img, .work-box-summake .img-box img, .work-box-girl .img-box img,
-    .work-box-summerdm .img-box img, .work-box-autumn .img-box img, .work-box-gri .img-box img {
+    .work-box-st1 .img-box img, .work-box-st2 .img-box img, .work-box-st3 .img-box img, .work-box-st4 .img-box img {
         width:100%;
         box-shadow: none;
     }
-    .work-box-aqa .img-box2,
-    .work-box-halloween .img-box2, .work-box-sijou .img-box2, .work-box-spmake .img-box2,
-    .work-box-deli .img-box2, .work-box-summake .img-box2, .work-box-girl .img-box2,
-    .work-box-summerdm .img-box2, .work-box-autumn .img-box2, .work-box-gri .img-box2 {
+    .work-box-st1 .img-box2, .work-box-st2 .img-box2, .work-box-st3 .img-box2, .work-box-st4 .img-box2 {
         position: relative;
         width: 100%;
         top: 0;
         left: 0;
     }
-    .work-box-aqa .img-box2 img,
-    .work-box-halloween .img-box2 img, .work-box-sijou .img-box2 img, .work-box-spmake .img-box2 img,
-    .work-box-deli .img-box2 img, .work-box-summake .img-box2 img, .work-box-girl .img-box2 img,
-    .work-box-summerdm .img-box2 img, .work-box-autumn .img-box2 img, .work-box-gri .img-box2 img {
+    .work-box-st1 .img-box2 img, .work-box-st2 .img-box2 img, .work-box-st3 .img-box2 img, .work-box-st4 .img-box2 img {
         width:100%;
         box-shadow: none;
-    }
-    .work-box-nmb, .work-box-mens {
-        width: 90%;
-    }
-    .work-box-nmb .img-box, .work-box-mens .img-box{
-        width: 100%;
-    }
-    .work-box-nmb .img-box img, .work-box-mens .img-box img {
-        width: 100%;
-        box-shadow: none;
-    }
-    .fa-arrow-left {
-        font-size: 14px;
     }
 }
 
